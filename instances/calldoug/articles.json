@@ -1,7 +1,47 @@
 {
   "instance_id": "calldoug",
-  "last_updated": "2026-07-06T14:26:20.779Z",
+  "last_updated": "2026-07-06T15:30:55.590Z",
   "articles": [
+    {
+      "id": "2026-06-29-the-narwhal-students-fight-to-recycle-in-a-northern-ontario-",
+      "title": "Students fight to recycle in a northern Ontario First Nation",
+      "source_name": "The Narwhal",
+      "source_url": "https://thenarwhal.ca/constance-lake-first-nation-recycling/?utm_source=rss",
+      "published_at": "2026-06-29T12:00:00.000Z",
+      "fetched_at": "2026-07-06T15:30:53.356Z",
+      "summary": "Grade 7 students in Constance Lake First Nation discovered their community lacks recycling services after Ontario shifted responsibility for blue box collection to a producer-run system. Although eligible to join the Blue Box Program, logistical concerns have prevented the First Nation from registering, leaving students advocating for recycling without a solution for their collected materials.\nThe Ontario government, under Doug Ford's administration, transitioned recycling responsibilities to Circular Materials, but as of January 2026, only 12 out of 102 eligible First Nations have registered for the program. This gap in service highlights the challenges faced by First Nations in accessing essential waste management services, raising questions about the support provided to these communities.",
+      "tags": [
+        "environment"
+      ],
+      "talking_points": [
+        {
+          "point": "Constance Lake First Nation has not received recycling services since around 2022 due to changes in Ontario's recycling program.",
+          "source_reference": "The article states that the First Nation has not received recycling services since around 2022 when the provincial program was ramping up."
+        },
+        {
+          "point": "The First Nation is eligible for Ontario's Blue Box Program but has not registered due to logistical concerns.",
+          "source_reference": "The article mentions that Constance Lake is eligible for the program but has not signed up due to logistical concerns."
+        },
+        {
+          "point": "As of January 2026, only 12 out of 102 eligible First Nations have transitioned to the new recycling program.",
+          "source_reference": "The article states that only 12 First Nations out of 102 residing south of the Far North border had transitioned to the new program as of January 2026."
+        },
+        {
+          "point": "The shift in responsibility for recycling from municipalities to a producer-run system has left many First Nations without access to services.",
+          "source_reference": "The article explains that the shift in responsibility has left over 100 First Nations, including Constance Lake, lacking recycling services."
+        },
+        {
+          "point": "Students in Constance Lake are advocating for recycling services, highlighting the community's need for environmental protection opportunities.",
+          "source_reference": "The article describes students advocating for recycling in their community, emphasizing their desire to protect the environment."
+        }
+      ],
+      "suggested_ask": "I'm asking the Premier to ensure that Constance Lake First Nation receives support to establish a recycling program under Ontario's Blue Box Program.",
+      "tone_note": "When calling, be respectful and clear about your ask regarding recycling support.",
+      "levels": [
+        "provincial",
+        "municipal"
+      ]
+    },
     {
       "id": "2026-06-15-the-breach-doug-ford-s-decision-to-close-safe-injection-sit",
       "title": "Doug Ford’s decision to close safe injection sites is a death sentence",
