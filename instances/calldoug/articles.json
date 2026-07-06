@@ -1,7 +1,42 @@
 {
   "instance_id": "calldoug",
-  "last_updated": "2026-06-09T14:00:00Z",
+  "last_updated": "2026-07-06T14:26:20.779Z",
   "articles": [
+    {
+      "id": "2026-06-15-the-breach-doug-ford-s-decision-to-close-safe-injection-sit",
+      "title": "Doug Ford’s decision to close safe injection sites is a death sentence",
+      "source_name": "The Breach",
+      "source_url": "https://breachmedia.ca/doug-fords-decision-to-close-safe-injection-sites-is-a-death-sentence/",
+      "published_at": "2026-06-15T14:00:28.000Z",
+      "fetched_at": "2026-07-06T14:26:09.332Z",
+      "summary": "Premier Doug Ford's decision to close safe injection sites in Ontario has been criticized as detrimental to health care services for individuals who use illicit drugs. The article argues that this move contradicts existing evidence supporting harm reduction and could lead to increased fatalities among drug users.\nThe closure of these sites raises significant concerns about public health and safety, as safe injection sites have been shown to reduce overdose deaths and provide critical support services. The article emphasizes the need for a policy review that considers the health impacts on vulnerable populations affected by this decision.",
+      "tags": [
+        "healthcare"
+      ],
+      "talking_points": [
+        {
+          "point": "The decision to close safe injection sites contradicts evidence supporting harm reduction strategies.",
+          "source_reference": "The article states that closing these sites is a contradiction to all evidence."
+        },
+        {
+          "point": "The closure of safe injection sites could lead to increased fatalities among individuals who use illicit drugs.",
+          "source_reference": "The article describes the decision as a 'death sentence' for those affected."
+        },
+        {
+          "point": "Safe injection sites have been shown to reduce overdose deaths and provide essential support services.",
+          "source_reference": "The article implies the importance of these sites in preventing fatalities."
+        },
+        {
+          "point": "The decision impacts vulnerable populations who rely on these health services for safety and support.",
+          "source_reference": "The article highlights the detrimental effects on health care services for people who use illicit drugs."
+        }
+      ],
+      "suggested_ask": "I'm asking the Premier to reconsider the decision to close safe injection sites and to prioritize harm reduction strategies in Ontario.",
+      "tone_note": "When you call, remember that staff are there to help. Be clear and respectful in your request.",
+      "levels": [
+        "provincial"
+      ]
+    },
     {
       "id": "2026-06-09-cp24-washington-trade-trip",
       "title": "Ford in Washington for closed-door trade trip with no public events",
@@ -10,14 +45,67 @@
       "published_at": "2026-06-09T11:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Premier Doug Ford is partway through a two-day trip to Washington, D.C. focused on trade, with no events open to the media and little public detail on his schedule beyond a handful of social-media posts. His office says the meetings are with auto-sector leads, agricultural representatives, a range of businesses, and several senior U.S. government officials.\nWith Ontario's auto and farm economies exposed to U.S. trade decisions, the substance of these meetings matters to workers and producers across the province. The lack of a public itinerary makes it harder for constituents to know what is being discussed on their behalf.",
-      "tags": ["labour", "affordability"],
+      "tags": [
+        "labour",
+        "affordability"
+      ],
       "talking_points": [
-        { "point": "Ontario workers in the auto and agricultural sectors have a direct stake in these trade talks and deserve to know what positions the Premier is taking.", "source_reference": "CP24 reports the meetings are with auto-sector leads, the farm community and agricultural representatives." },
-        { "point": "A two-day taxpayer-funded trade trip with no media access leaves constituents unable to verify what was promised or agreed.", "source_reference": "CP24 notes there were no events open to the media and limited visibility into his schedule." },
-        { "point": "The Premier should report back publicly on outcomes that affect Ontario jobs.", "source_reference": "CP24 lists meetings with 'several very high-ranking' U.S. government officials." }
+        {
+          "point": "Ontario workers in the auto and agricultural sectors have a direct stake in these trade talks and deserve to know what positions the Premier is taking.",
+          "source_reference": "CP24 reports the meetings are with auto-sector leads, the farm community and agricultural representatives."
+        },
+        {
+          "point": "A two-day taxpayer-funded trade trip with no media access leaves constituents unable to verify what was promised or agreed.",
+          "source_reference": "CP24 notes there were no events open to the media and limited visibility into his schedule."
+        },
+        {
+          "point": "The Premier should report back publicly on outcomes that affect Ontario jobs.",
+          "source_reference": "CP24 lists meetings with 'several very high-ranking' U.S. government officials."
+        }
       ],
       "suggested_ask": "I'm asking the Premier's office to publish a public summary of what was discussed in Washington and how it affects Ontario auto and farm jobs.",
       "tone_note": "Staff answer this line, not the Premier. Be direct, brief, and respectful."
+    },
+    {
+      "id": "2026-06-05-ricochet-the-carnival-trick-that-keeps-doug-ford-in-power",
+      "title": "The carnival trick that keeps Doug Ford in power",
+      "source_name": "Ricochet",
+      "source_url": "https://ricochet.media/politics/the-carnival-trick-that-keeps-doug-ford-in-power/",
+      "published_at": "2026-06-05T13:14:16.000Z",
+      "fetched_at": "2026-07-06T14:26:20.778Z",
+      "summary": "The article discusses how Doug Ford's government has maintained power despite low voter turnout and significant opposition by manipulating political donation rules and using tactics like the notwithstanding clause to override democratic processes. It highlights that Ford's party won a majority with only about 40.8% of the vote in 2022, meaning that most Ontarians did not vote for him, yet the narrative persists that 'Ontario chose Doug Ford.' The piece argues that the real power dynamics are skewed by a wealthy donor class that supports Ford's policies, which often come at the expense of community services and democratic integrity.\nThe author emphasizes that the perception of Ford's popularity is misleading, as it conflates the interests of a small group of wealthy donors with the broader electorate, which has largely not supported his government. This situation raises questions about accountability and the need for systemic reform to ensure that all Ontarians are represented fairly in the political process.",
+      "tags": [
+        "affordability",
+        "housing",
+        "labour"
+      ],
+      "talking_points": [
+        {
+          "point": "Doug Ford's Progressive Conservatives won a majority in 2022 with only 40.8% of the vote, meaning most Ontarians did not vote for him.",
+          "source_reference": "The article states that Ford's party won 83 of 124 seats on roughly 40.8% of the vote."
+        },
+        {
+          "point": "The voter turnout in 2022 was 43.5%, the lowest in Ontario's history, indicating widespread disengagement.",
+          "source_reference": "The article mentions that the turnout was 43.5%, the lowest in Ontario's history."
+        },
+        {
+          "point": "The article highlights that the political donation system has been changed to benefit wealthier donors, allowing them to contribute significantly more to the PCs.",
+          "source_reference": "The article discusses how the maximum donation cap was doubled, allowing wealthier donors to contribute tens of thousands of dollars."
+        },
+        {
+          "point": "The use of the notwithstanding clause to push through controversial legislation undermines democratic processes.",
+          "source_reference": "The article notes that Ford's government invoked the notwithstanding clause to pass Bill 307, overriding court decisions."
+        },
+        {
+          "point": "The narrative that 'Ontario chose Doug Ford' distracts from the structural issues affecting democracy and representation in the province.",
+          "source_reference": "The article argues that this narrative is a distraction from the reality of low voter support and engagement."
+        }
+      ],
+      "suggested_ask": "I'm asking the Premier to commit to reforming the political donation system to ensure fairer representation and accountability in Ontario.",
+      "tone_note": "When you call, remember that staff are there to help. Clearly state your concern and ask, and thank them for their time.",
+      "levels": [
+        "provincial"
+      ]
     },
     {
       "id": "2026-06-05-nationalobserver-legislature-shutdown",
@@ -27,11 +115,23 @@
       "published_at": "2026-06-05T09:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Premier Doug Ford's government is moving to shut down Ontario's legislature for roughly five months while it faces mounting scrutiny over a series of controversies. With the legislature not sitting, opposition MPPs lose their main venue to question the government on the record.\nThe reporting links the early shutdown to a cluster of unresolved issues this session, including changes to freedom-of-information laws, the government's short-lived private jet purchase, a takeover of Billy Bishop airport, the departure of a senior cabinet minister, and cuts to the Ontario Student Assistance Program (OSAP).",
-      "tags": ["education", "affordability"],
+      "tags": [
+        "education",
+        "affordability"
+      ],
       "talking_points": [
-        { "point": "Shutting the legislature for five months removes the main forum where the government answers questions about its decisions.", "source_reference": "National Observer reports the legislature will be shut for five months amid growing scrutiny." },
-        { "point": "Cuts to OSAP raise the cost of post-secondary education for students at a time of affordability pressure.", "source_reference": "National Observer lists OSAP cuts among the controversies of the session." },
-        { "point": "Changes to freedom-of-information law reduce the public's ability to see how decisions were made.", "source_reference": "National Observer cites changes to freedom-of-information laws among the issues under scrutiny." }
+        {
+          "point": "Shutting the legislature for five months removes the main forum where the government answers questions about its decisions.",
+          "source_reference": "National Observer reports the legislature will be shut for five months amid growing scrutiny."
+        },
+        {
+          "point": "Cuts to OSAP raise the cost of post-secondary education for students at a time of affordability pressure.",
+          "source_reference": "National Observer lists OSAP cuts among the controversies of the session."
+        },
+        {
+          "point": "Changes to freedom-of-information law reduce the public's ability to see how decisions were made.",
+          "source_reference": "National Observer cites changes to freedom-of-information laws among the issues under scrutiny."
+        }
       ],
       "suggested_ask": "I'm asking the Premier to keep the legislature sitting so MPPs can debate these decisions in public before any break.",
       "tone_note": "You're talking to staff who relay messages. Keep it civil and to the point."
@@ -44,10 +144,18 @@
       "published_at": "2026-06-04T16:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Premier Doug Ford is defending his government's use of charter flights following criticism over a short-lived, since-abandoned plan to purchase a private jet. Ford said he would 'continue to charter when needed.'\nGlobal News has reported the Ontario government spent more than $140,000 on private plane charters to at least five destinations in 2025. With affordability a daily concern for many Ontarians, how public money is spent on travel is a reasonable thing to question.",
-      "tags": ["affordability"],
+      "tags": [
+        "affordability"
+      ],
       "talking_points": [
-        { "point": "Taxpayers are entitled to a clear accounting of charter-flight spending and the rationale for each trip.", "source_reference": "Global News reported more than $140,000 spent on private charters to at least five destinations in 2025." },
-        { "point": "Committing to 'continue to charter when needed' should come with published criteria for when a charter is justified.", "source_reference": "CP24 quotes Ford saying he would continue to charter when needed." }
+        {
+          "point": "Taxpayers are entitled to a clear accounting of charter-flight spending and the rationale for each trip.",
+          "source_reference": "Global News reported more than $140,000 spent on private charters to at least five destinations in 2025."
+        },
+        {
+          "point": "Committing to 'continue to charter when needed' should come with published criteria for when a charter is justified.",
+          "source_reference": "CP24 quotes Ford saying he would continue to charter when needed."
+        }
       ],
       "suggested_ask": "I'm asking the Premier's office to publish the cost and purpose of each government charter flight.",
       "tone_note": "Staff take these calls. Be respectful — they didn't make the decision."
@@ -60,11 +168,23 @@
       "published_at": "2026-05-28T18:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "The Ford government's $244.2-billion 2026 budget — its eighth — promises $1.1-billion in new hospital funding next fiscal year. The Ontario Hospital Association, which represents 135 hospital corporations, has said the sector needed closer to $2.8-billion just to stabilize, leaving a substantial gap.\nThe budget also adds $186-million to the Ontario Autism Program and pledges $1.1-billion in additional home-care spending over three years. It projects a $13.8-billion deficit for 2026-27 — about $6-billion larger than the province forecast last fall.",
-      "tags": ["healthcare", "affordability"],
+      "tags": [
+        "healthcare",
+        "affordability"
+      ],
       "talking_points": [
-        { "point": "Hospitals say they needed roughly $2.8-billion to stabilize, but the budget provides $1.1-billion — a gap that affects wait times and care.", "source_reference": "The Globe and Mail reports the OHA said members needed nearly $2.8-billion versus the $1.1-billion provided." },
-        { "point": "The deficit is about $6-billion larger than projected last fall, which warrants an explanation of what changed.", "source_reference": "The Globe reports a $13.8-billion deficit, $6-billion more than projected in the fall." },
-        { "point": "Families relying on autism and home-care programs should know whether the new funding matches demand.", "source_reference": "The Globe notes $186-million more for the Ontario Autism Program and $1.1-billion for home care over three years." }
+        {
+          "point": "Hospitals say they needed roughly $2.8-billion to stabilize, but the budget provides $1.1-billion — a gap that affects wait times and care.",
+          "source_reference": "The Globe and Mail reports the OHA said members needed nearly $2.8-billion versus the $1.1-billion provided."
+        },
+        {
+          "point": "The deficit is about $6-billion larger than projected last fall, which warrants an explanation of what changed.",
+          "source_reference": "The Globe reports a $13.8-billion deficit, $6-billion more than projected in the fall."
+        },
+        {
+          "point": "Families relying on autism and home-care programs should know whether the new funding matches demand.",
+          "source_reference": "The Globe notes $186-million more for the Ontario Autism Program and $1.1-billion for home care over three years."
+        }
       ],
       "suggested_ask": "I'm asking the Premier to close the hospital funding gap the Ontario Hospital Association has identified.",
       "tone_note": "Staff answer the phone. Be brief and respectful."
@@ -77,10 +197,18 @@
       "published_at": "2026-05-20T13:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Premier Doug Ford has been defending his government's health-care spending record even as hospitals warn that a financial 'crisis' is approaching. Hospital leaders say current funding levels are not keeping pace with the cost of care and rising demand.\nThe disagreement matters because it determines staffing, wait times, and whether services in some communities can be maintained.",
-      "tags": ["healthcare"],
+      "tags": [
+        "healthcare"
+      ],
       "talking_points": [
-        { "point": "Hospitals are publicly warning of a financial crisis, which suggests funding is not keeping up with need.", "source_reference": "CBC reports hospitals say a financial 'crisis' is coming." },
-        { "point": "Constituents deserve to know how the government will prevent service reductions in their region.", "source_reference": "CBC frames the story around Ford defending his health-care spending record amid those warnings." }
+        {
+          "point": "Hospitals are publicly warning of a financial crisis, which suggests funding is not keeping up with need.",
+          "source_reference": "CBC reports hospitals say a financial 'crisis' is coming."
+        },
+        {
+          "point": "Constituents deserve to know how the government will prevent service reductions in their region.",
+          "source_reference": "CBC frames the story around Ford defending his health-care spending record amid those warnings."
+        }
       ],
       "suggested_ask": "I'm asking the Premier to commit to funding that hospital associations say is needed to avoid service cuts.",
       "tone_note": "Be respectful with staff — they relay your message."
@@ -93,11 +221,24 @@
       "published_at": "2026-05-19T12:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Ontario's municipal affairs minister says the province will move ahead with a long-delayed mandatory review of the Greenbelt, which is required by law every decade and had been due to begin earlier this year. The minister gave no indication of when the review would start or who would lead it.\nThe Greenbelt has been a source of scandal since 2022, when the government moved to open protected land for development. The auditor general and integrity commissioner found the land-selection process was rushed and favoured certain developers, with affected landowners standing to gain an estimated $8.3-billion in value.",
-      "tags": ["greenbelt", "environment", "housing"],
+      "tags": [
+        "greenbelt",
+        "environment",
+        "housing"
+      ],
       "talking_points": [
-        { "point": "A review required by law every decade is overdue, and the public still doesn't know who will conduct it or when.", "source_reference": "CBC reports the minister gave no word on who will run the review or when it will begin." },
-        { "point": "Given the auditor general's findings that the 2022 process favoured certain developers, the review's independence is essential.", "source_reference": "CBC notes the auditor general and integrity commissioner found the process was rushed and favoured certain developers." },
-        { "point": "Landowners stood to gain an estimated $8.3-billion, so transparency about how protected land is treated matters.", "source_reference": "CBC cites the auditor general's $8.3-billion land-value figure." }
+        {
+          "point": "A review required by law every decade is overdue, and the public still doesn't know who will conduct it or when.",
+          "source_reference": "CBC reports the minister gave no word on who will run the review or when it will begin."
+        },
+        {
+          "point": "Given the auditor general's findings that the 2022 process favoured certain developers, the review's independence is essential.",
+          "source_reference": "CBC notes the auditor general and integrity commissioner found the process was rushed and favoured certain developers."
+        },
+        {
+          "point": "Landowners stood to gain an estimated $8.3-billion, so transparency about how protected land is treated matters.",
+          "source_reference": "CBC cites the auditor general's $8.3-billion land-value figure."
+        }
       ],
       "suggested_ask": "I'm asking the Premier to name an independent lead and a firm start date for the mandatory Greenbelt review.",
       "tone_note": "Staff take the call. Keep it factual and respectful."
@@ -110,14 +251,28 @@
       "published_at": "2026-03-30T15:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Premier Doug Ford and Prime Minister Mark Carney announced a Canada–Ontario partnership to build more affordable homes, infrastructure, and transit, which they say will reduce taxes and fees on a home in Ontario by up to $200,000.\nThe joint announcement spans two levels of government, which makes it worth asking each what specifically it is responsible for delivering, and on what timeline.",
-      "tags": ["housing", "transit", "affordability"],
+      "tags": [
+        "housing",
+        "transit",
+        "affordability"
+      ],
       "talking_points": [
-        { "point": "A combined federal-provincial saving of up to $200,000 per home needs clear delivery milestones to be credible.", "source_reference": "CP24 reports the partnership would reduce taxes and fees for a home in Ontario by up to $200,000." },
-        { "point": "Voters should know which orders of government are accountable for the housing, infrastructure, and transit commitments.", "source_reference": "CP24 describes a Canada–Ontario partnership covering homes, infrastructure and transit." }
+        {
+          "point": "A combined federal-provincial saving of up to $200,000 per home needs clear delivery milestones to be credible.",
+          "source_reference": "CP24 reports the partnership would reduce taxes and fees for a home in Ontario by up to $200,000."
+        },
+        {
+          "point": "Voters should know which orders of government are accountable for the housing, infrastructure, and transit commitments.",
+          "source_reference": "CP24 describes a Canada–Ontario partnership covering homes, infrastructure and transit."
+        }
       ],
       "suggested_ask": "I'm asking the Premier to publish Ontario's specific deliverables and timelines under the Canada–Ontario housing partnership.",
       "tone_note": "Be brief and respectful with the staff who take your call.",
-      "levels": ["federal", "provincial", "municipal"]
+      "levels": [
+        "federal",
+        "provincial",
+        "municipal"
+      ]
     },
     {
       "id": "2026-03-25-cbc-hst-new-homes",
@@ -127,29 +282,22 @@
       "published_at": "2026-03-25T17:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Premier Doug Ford announced that the full 13 per cent HST will be removed on new homes valued up to $1-million from April 1, 2026 to March 31, 2027. The measure, unveiled at a news conference in Mississauga, is pitched as affordability relief for buyers.\nA one-year, time-limited rebate raises fair questions about who benefits, whether it will be extended, and how much it actually lowers final prices for buyers rather than being absorbed elsewhere.",
-      "tags": ["housing", "affordability"],
+      "tags": [
+        "housing",
+        "affordability"
+      ],
       "talking_points": [
-        { "point": "A one-year window may not be long enough for buyers or builders to plan around — will it be extended?", "source_reference": "CBC reports the rebate runs April 1, 2026 to March 31, 2027." },
-        { "point": "Constituents should know whether the savings reach buyers or are offset by price increases.", "source_reference": "CBC reports the full 13 per cent tax is removed on new homes up to $1-million." }
+        {
+          "point": "A one-year window may not be long enough for buyers or builders to plan around — will it be extended?",
+          "source_reference": "CBC reports the rebate runs April 1, 2026 to March 31, 2027."
+        },
+        {
+          "point": "Constituents should know whether the savings reach buyers or are offset by price increases.",
+          "source_reference": "CBC reports the full 13 per cent tax is removed on new homes up to $1-million."
+        }
       ],
       "suggested_ask": "I'm asking the Premier to report on how much the HST rebate actually lowers prices for buyers, and whether it will be extended.",
       "tone_note": "Staff answer this line. Be direct and respectful."
-    },
-    {
-      "id": "2025-12-03-nationalobserver-ebr-auditor",
-      "title": "Auditor finds Ontario skipped public-input rules on major projects",
-      "source_name": "Canada's National Observer",
-      "source_url": "https://www.nationalobserver.com/2025/12/03/news/auditor-general-report-ford-government-ontario-ebr",
-      "published_at": "2025-12-03T10:00:00Z",
-      "fetched_at": "2026-06-09T14:00:00Z",
-      "summary": "Ontario's auditor general found the Ford government ignored public-input requirements under the Environmental Bill of Rights, repeatedly exempting major projects — including Highway 413 and Ontario Place — from required public consultation.\nThe Environmental Bill of Rights exists to give residents a say before significant environmental decisions are made. Bypassing it removes a formal channel for public input on projects that reshape land and communities.",
-      "tags": ["environment", "transit"],
-      "talking_points": [
-        { "point": "The auditor general found required public consultations were skipped on major projects, which limits residents' say.", "source_reference": "National Observer reports the auditor found the province ignored public-input rules under the Environmental Bill of Rights." },
-        { "point": "Highway 413 and Ontario Place are large projects where public input was bypassed.", "source_reference": "National Observer names Highway 413 and Ontario Place as projects exempted from consultation." }
-      ],
-      "suggested_ask": "I'm asking the Premier to commit to following the Environmental Bill of Rights consultation requirements on major projects.",
-      "tone_note": "You're speaking with staff. Keep it respectful and concise."
     },
     {
       "id": "2026-02-15-pressprogress-public-services-impact",
@@ -159,13 +307,48 @@
       "published_at": "2026-02-15T09:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "An analysis of the Ford government's 2026 priorities argues that public services and infrastructure — including health care, education, and transit — face continued pressure relative to need. The piece situates this year's spending decisions against the demands of a growing province.\nWhether you agree with the framing or not, it points to a concrete question worth putting to the Premier's office: how will service levels keep pace with population growth and rising costs.",
-      "tags": ["labour", "healthcare", "transit"],
+      "tags": [
+        "labour",
+        "healthcare",
+        "transit"
+      ],
       "talking_points": [
-        { "point": "Front-line public services need funding that keeps pace with a growing population.", "source_reference": "PressProgress argues public services and infrastructure face pressure under the government's 2026 priorities." },
-        { "point": "The workers who deliver health, education, and transit services are affected by these spending choices.", "source_reference": "PressProgress frames the analysis around public services and infrastructure for 2026." }
+        {
+          "point": "Front-line public services need funding that keeps pace with a growing population.",
+          "source_reference": "PressProgress argues public services and infrastructure face pressure under the government's 2026 priorities."
+        },
+        {
+          "point": "The workers who deliver health, education, and transit services are affected by these spending choices.",
+          "source_reference": "PressProgress frames the analysis around public services and infrastructure for 2026."
+        }
       ],
       "suggested_ask": "I'm asking the Premier to show how 2026 service funding keeps pace with population growth and inflation.",
       "tone_note": "Be respectful with the staff who take your message."
+    },
+    {
+      "id": "2025-12-03-nationalobserver-ebr-auditor",
+      "title": "Auditor finds Ontario skipped public-input rules on major projects",
+      "source_name": "Canada's National Observer",
+      "source_url": "https://www.nationalobserver.com/2025/12/03/news/auditor-general-report-ford-government-ontario-ebr",
+      "published_at": "2025-12-03T10:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Ontario's auditor general found the Ford government ignored public-input requirements under the Environmental Bill of Rights, repeatedly exempting major projects — including Highway 413 and Ontario Place — from required public consultation.\nThe Environmental Bill of Rights exists to give residents a say before significant environmental decisions are made. Bypassing it removes a formal channel for public input on projects that reshape land and communities.",
+      "tags": [
+        "environment",
+        "transit"
+      ],
+      "talking_points": [
+        {
+          "point": "The auditor general found required public consultations were skipped on major projects, which limits residents' say.",
+          "source_reference": "National Observer reports the auditor found the province ignored public-input rules under the Environmental Bill of Rights."
+        },
+        {
+          "point": "Highway 413 and Ontario Place are large projects where public input was bypassed.",
+          "source_reference": "National Observer names Highway 413 and Ontario Place as projects exempted from consultation."
+        }
+      ],
+      "suggested_ask": "I'm asking the Premier to commit to following the Environmental Bill of Rights consultation requirements on major projects.",
+      "tone_note": "You're speaking with staff. Keep it respectful and concise."
     }
   ]
 }
