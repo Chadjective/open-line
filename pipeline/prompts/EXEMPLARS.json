@@ -1,0 +1,405 @@
+{
+  "_comment": "OpenLine voice exemplars. Article stubs are realistic placeholders written for training/few-shot purposes; they are not real published articles. Every talking_point in each output is traceable to its stub's body_excerpt. Schema matches pipeline/prompts/summarize-and-extract.txt exactly. See VOICE_GUIDE.md for the rules these demonstrate.",
+  "calldoug": [
+    {
+      "article_stub": {
+        "title": "Northern Ontario ERs logged 41 temporary closures this spring as staffing gaps persist",
+        "source_name": "CBC Ontario",
+        "published_at": "2026-06-18T10:30:00Z",
+        "body_excerpt": "Emergency departments in northern Ontario were forced to close temporarily 41 times between March and May of this year, according to figures compiled from hospital service notices, with most closures attributed to nursing shortages. The town of Marathon's ER closed overnight six times in May alone, leaving residents facing a drive of more than 90 minutes to the next open emergency department. The Ministry of Health said its temporary locum program has filled 'the majority' of requested physician shifts and pointed to 2,800 new nursing graduates hired provincewide since 2024. Hospital administrators interviewed said the locum program does not address the nursing gap that drives most closures, and that no ministry target exists for eliminating temporary ER closures."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "Emergency departments in northern Ontario closed temporarily 41 times between March and May, with most closures attributed to nursing shortages, according to figures compiled from hospital service notices. In Marathon, the ER closed overnight six times in May, leaving residents more than 90 minutes from the next open emergency department.\nThe Ministry of Health says its locum program has filled most requested physician shifts and points to 2,800 new nursing graduates hired since 2024. Hospital administrators counter that the locum program does not address the nursing gap driving most closures — and the article notes the ministry has no target for eliminating temporary ER closures.\nFor residents of affected communities, the open question is concrete: what is the plan, with a date attached, to keep their nearest ER open overnight.",
+        "tags": ["healthcare", "labour"],
+        "talking_points": [
+          {
+            "point": "Northern Ontario ERs closed temporarily 41 times in three months this spring, mostly due to nursing shortages.",
+            "source_reference": "The article cites 41 temporary closures between March and May compiled from hospital service notices, most attributed to nursing shortages."
+          },
+          {
+            "point": "Marathon residents faced six overnight ER closures in May, with the next open emergency department more than 90 minutes away.",
+            "source_reference": "The article reports Marathon's ER closed overnight six times in May and cites the 90-minute drive to the next open ER."
+          },
+          {
+            "point": "Hospital administrators say the province's locum program fills physician shifts but does not address the nursing gap causing most closures.",
+            "source_reference": "Administrators interviewed in the article say the locum program does not address the nursing shortage driving closures."
+          },
+          {
+            "point": "The ministry has no stated target for eliminating temporary ER closures, so there is no benchmark to hold it to.",
+            "source_reference": "The article states no ministry target exists for eliminating temporary ER closures."
+          }
+        ],
+        "suggested_ask": "I'm asking the Premier to set a public target and timeline for ending temporary ER closures in northern Ontario.",
+        "tone_note": "Staff take these calls all day. Say which community you're worried about and make the ask once, clearly — specifics get logged, venting doesn't.",
+        "levels": ["provincial"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "Province issues minister's zoning order for warehouse complex on Duffins Creek-area wetland",
+        "source_name": "The Narwhal",
+        "published_at": "2026-05-27T09:00:00Z",
+        "body_excerpt": "Ontario's municipal affairs minister has issued a minister's zoning order allowing a 210-hectare warehouse and logistics complex on provincially significant wetland near Duffins Creek, overriding the local municipality's official plan, which designated the land for protection. The order was issued without public consultation; MZOs are exempt from the normal planning appeal process. The developer, whose lobbyist registration shows 14 meetings with ministry staff since January, has committed to 'offset' the wetland by constructing engineered ponds elsewhere. The local conservation authority wrote to the ministry in April stating that constructed offsets 'do not replicate the flood-mitigation function' of the existing wetland. The minister's office said the project will create an estimated 1,900 jobs and that housing-enabling infrastructure 'cannot wait.'"
+      },
+      "output": {
+        "relevant": true,
+        "summary": "The province has issued a minister's zoning order permitting a 210-hectare warehouse complex on provincially significant wetland near Duffins Creek, overriding the local official plan that designated the land for protection. The order was issued without public consultation, and MZOs are exempt from the normal planning appeal process.\nThe developer has committed to offset the wetland with engineered ponds, but the local conservation authority told the ministry in April that constructed offsets do not replicate the existing wetland's flood-mitigation function. Lobbyist registrations show the developer met ministry staff 14 times since January. The minister's office says the project will create an estimated 1,900 jobs and that infrastructure cannot wait.\nBecause the MZO removes both consultation and appeal, the only remaining venue for public questions is the government itself.",
+        "tags": ["environment", "greenbelt", "housing"],
+        "talking_points": [
+          {
+            "point": "The zoning order overrides the municipality's own official plan, which had designated this wetland for protection.",
+            "source_reference": "The article states the MZO overrides the local official plan that designated the land for protection."
+          },
+          {
+            "point": "The order was issued without public consultation and cannot be appealed through the normal planning process.",
+            "source_reference": "The article reports the order was issued without consultation and that MZOs are exempt from the planning appeal process."
+          },
+          {
+            "point": "The conservation authority told the ministry in writing that engineered offset ponds do not replicate the wetland's flood-mitigation function.",
+            "source_reference": "The article quotes the conservation authority's April letter on constructed offsets."
+          },
+          {
+            "point": "The developer's lobbyists met ministry staff 14 times since January, which makes the decision record worth publishing.",
+            "source_reference": "The article cites lobbyist registrations showing 14 meetings with ministry staff since January."
+          }
+        ],
+        "suggested_ask": "I'm asking the Premier to release the full decision record for this zoning order, including the ministry's response to the conservation authority's flood warning.",
+        "tone_note": "This story raises direct questions and it's fine to ask them directly. The staffer answering didn't issue the order — state your ask once and thank them.",
+        "levels": ["provincial", "municipal"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "First trains run on Bowmanville GO extension, four years after funding deal",
+        "source_name": "CBC Ontario",
+        "published_at": "2026-06-29T14:00:00Z",
+        "body_excerpt": "The first scheduled GO trains ran Monday on the Lakeshore East extension to Bowmanville, adding four new stations and bringing rail service to a corridor of roughly 200,000 residents. The $1.7-billion project was funded jointly, with the federal government contributing $530 million and the province covering the remainder. Initial service is limited to six trains each way on weekdays; Metrolinx says two-way all-day service depends on a future track-sharing agreement with CP Rail, for which no timeline has been announced. Commuter advocates welcomed the opening but noted the promised 2,400-space parking expansion at the Courtice station has been deferred to an unspecified date."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "GO train service began Monday on the Lakeshore East extension to Bowmanville, adding four stations in a corridor of roughly 200,000 residents. The $1.7-billion project was funded jointly — $530 million federal, the remainder provincial.\nThe opening delivers something commuters in the corridor have waited years for. Two delivery questions remain open in the article: full two-way, all-day service depends on a track-sharing agreement with CP Rail that has no announced timeline, and the promised 2,400-space parking expansion at Courtice has been deferred to an unspecified date. Initial service is six trains each way on weekdays.\nA project this size is judged on whether the limited opening becomes the full promised service — which makes the missing timelines the thing to ask about.",
+        "tags": ["transit", "affordability"],
+        "talking_points": [
+          {
+            "point": "The Bowmanville extension is now open with four new stations serving a corridor of about 200,000 residents.",
+            "source_reference": "The article reports first scheduled trains ran Monday, adding four stations in a corridor of roughly 200,000 residents."
+          },
+          {
+            "point": "Full two-way all-day service depends on a track-sharing agreement with CP Rail that has no announced timeline.",
+            "source_reference": "The article reports Metrolinx says two-way all-day service depends on a CP Rail agreement with no timeline announced."
+          },
+          {
+            "point": "The promised 2,400-space parking expansion at Courtice has been deferred with no new date.",
+            "source_reference": "The article notes commuter advocates flagged the parking expansion deferred to an unspecified date."
+          }
+        ],
+        "suggested_ask": "I'm asking the Premier's office for a public timeline on the CP Rail track-sharing agreement needed for all-day Bowmanville service.",
+        "tone_note": "It's worth telling staff when you support a decision — those calls get logged too. Pair the thanks with one question about the service timeline.",
+        "levels": ["federal", "provincial"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "Ontario school repair backlog hits $18.7 billion as ministry ends public reporting of building-condition data",
+        "source_name": "Ricochet",
+        "published_at": "2026-04-14T08:00:00Z",
+        "body_excerpt": "Ontario's school repair backlog has grown to $18.7 billion, up from $16.8 billion two years ago, according to board-level facility data obtained through freedom-of-information requests. The Ministry of Education stopped publishing school-by-school building-condition figures in 2024, meaning parents can no longer look up the state of their child's school. Boards collectively received $1.4 billion in renewal funding this year, which facility managers quoted in the reporting say covers less than half of annual deterioration. The ministry said capital priorities are 'assessed continuously' and noted 60 new school builds announced since 2023. Several boards reported classrooms closed this winter due to heating failures."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "Ontario's school repair backlog has grown to $18.7 billion, up from $16.8 billion two years ago, according to board facility data obtained through freedom-of-information requests. The Ministry of Education stopped publishing school-by-school building-condition figures in 2024, so parents can no longer look up the state of their child's school.\nBoards received $1.4 billion in renewal funding this year — less than half of annual deterioration, according to facility managers quoted in the reporting. The ministry says capital priorities are assessed continuously and points to 60 new school builds announced since 2023. Several boards reported classrooms closed this winter due to heating failures.\nTwo separate issues sit in this story: the funding gap itself, and the end of public reporting that lets families see it.",
+        "tags": ["education", "affordability"],
+        "talking_points": [
+          {
+            "point": "The school repair backlog grew from $16.8 billion to $18.7 billion in two years, per board facility data obtained under freedom-of-information law.",
+            "source_reference": "The article cites FOI-obtained board data showing the backlog at $18.7 billion, up from $16.8 billion."
+          },
+          {
+            "point": "The ministry stopped publishing school-by-school building-condition data in 2024, so parents cannot check their own school's state of repair.",
+            "source_reference": "The article states the ministry ended school-by-school building-condition reporting in 2024."
+          },
+          {
+            "point": "Facility managers say this year's $1.4 billion in renewal funding covers less than half of annual deterioration.",
+            "source_reference": "Facility managers quoted in the article say the funding covers less than half of yearly deterioration."
+          },
+          {
+            "point": "Classrooms closed this winter due to heating failures, which shows the backlog is affecting instruction now.",
+            "source_reference": "The article reports several boards closed classrooms this winter over heating failures."
+          }
+        ],
+        "suggested_ask": "I'm asking the Premier to restore public school-by-school building-condition reporting so families can see the state of their schools.",
+        "tone_note": "Be direct and brief — the staffer taking the call didn't set the policy, and a clear single ask is what gets written down.",
+        "levels": ["provincial"]
+      }
+    }
+  ],
+  "callcarney": [
+    {
+      "article_stub": {
+        "title": "Ottawa's counter-tariff relief fund has paid out 12% of pledged support as auto suppliers cut shifts",
+        "source_name": "CBC Politics",
+        "published_at": "2026-06-11T12:00:00Z",
+        "body_excerpt": "Nine months after the Carney government announced a $4-billion relief fund for manufacturers hit by U.S. tariffs, $480 million — about 12 per cent — has been paid out, according to figures tabled in Parliament this week. Industry associations say application processing is averaging 14 weeks against a published service standard of six. Three parts suppliers in Windsor and Brampton have moved to reduced shifts since April, affecting roughly 1,100 workers, citing cash-flow strain while awaiting decisions. The industry minister's office said the pace reflects 'due diligence on public funds' and that processing capacity was doubled in May. The figures tabled do not indicate how many applications have been rejected versus pending."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "Nine months after the federal government announced a $4-billion tariff relief fund for manufacturers, $480 million — about 12 per cent — has been paid out, according to figures tabled in Parliament. Industry associations say applications are taking an average of 14 weeks to process against a published service standard of six.\nThe delay has consequences the article documents: three parts suppliers in Windsor and Brampton have moved to reduced shifts since April, affecting roughly 1,100 workers, citing cash-flow strain while awaiting decisions. The minister's office says the pace reflects due diligence and that processing capacity was doubled in May.\nThe tabled figures do not break out rejected versus pending applications — a gap that makes the fund's real performance hard to assess.",
+        "tags": ["trade", "economy"],
+        "talking_points": [
+          {
+            "point": "Only about 12 per cent of the $4-billion tariff relief fund has reached manufacturers nine months after it was announced.",
+            "source_reference": "Figures tabled in Parliament, cited in the article, show $480 million of $4 billion paid out."
+          },
+          {
+            "point": "Applications are averaging 14 weeks to process against the government's own six-week service standard.",
+            "source_reference": "The article reports industry associations citing 14-week average processing against a published six-week standard."
+          },
+          {
+            "point": "Roughly 1,100 workers in Windsor and Brampton are on reduced shifts while their employers wait on fund decisions.",
+            "source_reference": "The article reports three suppliers cut shifts since April, affecting roughly 1,100 workers, citing cash-flow strain awaiting decisions."
+          },
+          {
+            "point": "The figures tabled don't say how many applications were rejected versus still pending, so Parliament can't see the fund's actual throughput.",
+            "source_reference": "The article notes the tabled figures do not distinguish rejected from pending applications."
+          }
+        ],
+        "suggested_ask": "I'm asking the Prime Minister's office to publish monthly figures on tariff-relief applications received, approved, rejected, and paid.",
+        "tone_note": "Staff answer this line, not the Prime Minister. One clear ask, stated once, gets logged — keep it brief and civil.",
+        "levels": ["federal"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "Carney government approves LNG terminal expansion; updated climate plan still unpublished",
+        "source_name": "The Narwhal",
+        "published_at": "2026-05-08T07:30:00Z",
+        "body_excerpt": "The federal cabinet has approved the Phase 2 expansion of a West Coast LNG terminal, a project the Impact Assessment Agency estimates will add 3.1 megatonnes of CO2-equivalent annually once operating. The approval comes while the government's updated emissions-reduction plan — legally due in December under the Net-Zero Accountability Act — remains unpublished five months later. The environment minister said the project 'fits within Canada's climate framework' but did not release modelling showing how. The commissioner of the environment reported in March that Canada is not on track for its 2030 target and cited 'approval decisions made ahead of plan updates' as a recurring pattern. Cabinet's approval attached 27 conditions, which the article notes do not include an emissions cap on the facility."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "Federal cabinet has approved the Phase 2 expansion of a West Coast LNG terminal that the Impact Assessment Agency estimates will add 3.1 megatonnes of CO2-equivalent per year once operating. The approval comes while the government's updated emissions-reduction plan — legally due last December under the Net-Zero Accountability Act — remains unpublished five months later.\nThe environment minister says the project fits within Canada's climate framework but has not released modelling showing how. The environment commissioner reported in March that Canada is not on track for its 2030 target, citing approval decisions made ahead of plan updates as a recurring pattern.\nThe approval carries 27 conditions; the article notes an emissions cap on the facility is not among them.",
+        "tags": ["climate", "energy"],
+        "talking_points": [
+          {
+            "point": "The government's updated emissions plan is five months past its legal deadline under the Net-Zero Accountability Act, yet major approvals are proceeding.",
+            "source_reference": "The article states the plan was legally due in December and remains unpublished five months later."
+          },
+          {
+            "point": "The minister says the project fits Canada's climate framework but has released no modelling to show it.",
+            "source_reference": "The article reports the minister's statement and that no supporting modelling was released."
+          },
+          {
+            "point": "The project is assessed to add 3.1 megatonnes of CO2-equivalent annually, and the environment commissioner already says Canada is off track for 2030.",
+            "source_reference": "The article cites the Impact Assessment Agency's 3.1-megatonne estimate and the commissioner's March finding."
+          },
+          {
+            "point": "None of the 27 approval conditions includes an emissions cap on the facility.",
+            "source_reference": "The article notes the conditions do not include an emissions cap."
+          }
+        ],
+        "suggested_ask": "I'm asking the Prime Minister to publish the overdue emissions-reduction plan and the modelling that shows this approval fits within it.",
+        "tone_note": "It's fair to press on a missed legal deadline — just remember the person answering is a staffer. Make the ask once, clearly, and thank them.",
+        "levels": ["federal", "provincial"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "Build Canada Homes has started 6,200 units against 60,000 target, internal review finds municipal approvals key bottleneck",
+        "source_name": "CBC Politics",
+        "published_at": "2026-06-24T16:00:00Z",
+        "body_excerpt": "An internal review of Build Canada Homes, obtained under access-to-information, shows the agency has started construction on 6,200 units toward its target of 60,000 starts by the end of 2027. The review identifies municipal approval timelines as the largest bottleneck, with projects in participating cities averaging 11 months from land transfer to permit. It also flags that 40 per cent of the agency's federal land parcels required unbudgeted remediation. The housing minister said starts 'will accelerate sharply' in 2026-27 as early-stage projects clear approvals, and noted 21,000 additional units are in pre-construction. The review recommends the agency publish a quarterly public dashboard; the government has not said whether it will."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "An internal review obtained under access-to-information shows Build Canada Homes has started 6,200 units toward its target of 60,000 starts by the end of 2027. The review identifies municipal approval timelines as the largest bottleneck — projects average 11 months from land transfer to permit — and flags that 40 per cent of federal land parcels needed unbudgeted remediation.\nThe housing minister says starts will accelerate sharply in 2026-27 as early-stage projects clear approvals, with 21,000 units in pre-construction. That is a checkable claim, and the review itself recommends the mechanism to check it: a quarterly public dashboard. The government has not said whether it will publish one.\nWith the target date fixed, the distance between 6,200 starts and 60,000 is the story to watch — and the dashboard is how the public would watch it.",
+        "tags": ["housing", "affordability"],
+        "talking_points": [
+          {
+            "point": "Build Canada Homes has started 6,200 units against its 60,000 target for end of 2027, per the government's own internal review.",
+            "source_reference": "The article cites the internal review showing 6,200 starts toward the 60,000 target."
+          },
+          {
+            "point": "The review recommends a quarterly public dashboard, and the government hasn't said whether it will publish one.",
+            "source_reference": "The article states the review recommends a quarterly dashboard and the government has not responded."
+          },
+          {
+            "point": "Forty per cent of the federal land parcels needed remediation that wasn't budgeted, which affects cost and schedule.",
+            "source_reference": "The review, per the article, flags 40 per cent of parcels requiring unbudgeted remediation."
+          },
+          {
+            "point": "The minister says 21,000 more units are in pre-construction and starts will accelerate — a commitment the public should be able to track.",
+            "source_reference": "The article quotes the minister on acceleration and 21,000 units in pre-construction."
+          }
+        ],
+        "suggested_ask": "I'm asking the Prime Minister to commit to the quarterly public dashboard for Build Canada Homes that the internal review recommends.",
+        "tone_note": "Staff take these calls all day. A specific, trackable ask like a public dashboard is easy to log — keep it short and respectful.",
+        "levels": ["federal", "municipal"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "Immigration backlog falls 31% after processing overhaul; family-reunification wait times still rising",
+        "source_name": "CBC Politics",
+        "published_at": "2026-04-22T13:00:00Z",
+        "body_excerpt": "Canada's immigration application backlog has fallen 31 per cent over twelve months, from 2.1 million to 1.45 million applications, following a processing overhaul that consolidated intake systems and added 900 processing staff, department figures show. Economic-stream and study-permit processing now meet service standards in most categories. Wait times for spousal and family-reunification sponsorship, however, rose to 28 months from 24 over the same period; the department attributed this to staff reallocation toward economic streams. The immigration minister called the results 'proof the system can be fixed' and said family-class timelines are 'the next priority,' without announcing a target or reallocation plan."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "Canada's immigration backlog fell 31 per cent over twelve months — from 2.1 million applications to 1.45 million — following an overhaul that consolidated intake systems and added 900 processing staff, according to department figures. Economic-stream and study-permit processing now meet service standards in most categories.\nThe improvement is real and measurable. It also came with a documented trade-off: spousal and family-reunification wait times rose from 24 to 28 months over the same period, which the department attributes to staff reallocation toward economic streams.\nThe minister calls family-class timelines the next priority, but the article notes no target or reallocation plan has been announced — which is the missing piece for families currently waiting.",
+        "tags": ["immigration"],
+        "talking_points": [
+          {
+            "point": "The overall backlog fell 31 per cent in a year, from 2.1 million to 1.45 million applications, per department figures.",
+            "source_reference": "The article cites department figures on the backlog falling from 2.1 million to 1.45 million."
+          },
+          {
+            "point": "Family-reunification wait times rose from 24 to 28 months in the same period, which the department links to staff being moved to economic streams.",
+            "source_reference": "The article reports the rise to 28 months and the department's staff-reallocation explanation."
+          },
+          {
+            "point": "The minister says family-class timelines are the next priority but has announced no target or plan.",
+            "source_reference": "The article quotes the minister and notes no target or reallocation plan was announced."
+          }
+        ],
+        "suggested_ask": "I'm asking the Prime Minister's office to set a published service-standard target and date for family-reunification processing times.",
+        "tone_note": "If the backlog progress matters to you, say so — then ask your one question about family-class timelines. Staff log supportive calls too.",
+        "levels": ["federal"]
+      }
+    }
+  ],
+  "callchow": [
+    {
+      "article_stub": {
+        "title": "TTC board approves service plan with 4% bus service cut if provincial operating deal falls through",
+        "source_name": "CBC Toronto",
+        "published_at": "2026-06-16T15:30:00Z",
+        "body_excerpt": "The TTC board approved a 2027 service plan Tuesday that maintains current service only if the city secures $190 million in provincial operating support that has been under negotiation since January; without it, the plan schedules a 4 per cent reduction in bus service hours concentrated on 28 routes, most of them in Scarborough and Etobicoke. Mayor Olivia Chow, who chairs the board's oversight, said she is 'confident' a deal will be reached but declined to say what happens to the negotiation after the summer recess. TTC staff reported ridership has recovered to 92 per cent of pre-pandemic levels while service hours sit at 96 per cent. The board's own equity analysis found the affected routes serve neighbourhoods with above-average transit dependence."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "The TTC board approved a 2027 service plan that holds current service only if the city secures $190 million in provincial operating support under negotiation since January. Without a deal, the plan schedules a 4 per cent cut to bus service hours across 28 routes, most in Scarborough and Etobicoke.\nMayor Chow says she is confident a deal will be reached but declined to say what happens to the negotiation after the summer recess. The board's own equity analysis found the affected routes serve neighbourhoods with above-average transit dependence, and TTC staff report ridership at 92 per cent of pre-pandemic levels against 96 per cent of service hours.\nRiders on those 28 routes are effectively waiting on a negotiation with no public timeline — which is the thing to ask the Mayor's office about.",
+        "tags": ["TTC", "transit"],
+        "talking_points": [
+          {
+            "point": "The approved plan cuts 4 per cent of bus service hours on 28 routes if the $190-million provincial deal isn't reached.",
+            "source_reference": "The article describes the board-approved plan's conditional 4 per cent cut across 28 routes."
+          },
+          {
+            "point": "The board's own equity analysis found the affected routes serve neighbourhoods with above-average transit dependence.",
+            "source_reference": "The article cites the board's equity analysis on the affected routes."
+          },
+          {
+            "point": "The Mayor says she's confident in a deal but hasn't said what happens to the negotiation after the summer recess.",
+            "source_reference": "The article reports the Mayor's confidence and her declining to address the post-recess timeline."
+          },
+          {
+            "point": "Ridership has recovered to 92 per cent of pre-pandemic levels, so cuts would land on a system riders are returning to.",
+            "source_reference": "TTC staff figures in the article: 92 per cent ridership recovery, 96 per cent service hours."
+          }
+        ],
+        "suggested_ask": "I'm asking the Mayor to publish the timeline for the provincial operating negotiation and the city's fallback plan for the 28 affected routes.",
+        "tone_note": "Staff answer the Mayor's line, not the Mayor. Name your route or neighbourhood, make one ask, and keep it courteous.",
+        "levels": ["municipal", "provincial"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "City has spent $2.1 million on Bloor bike lane redesign ordered by province; Chow declines to release legal advice on next steps",
+        "source_name": "TorontoToday",
+        "published_at": "2026-05-21T11:00:00Z",
+        "body_excerpt": "Toronto has spent $2.1 million to date redesigning sections of the Bloor Street bike lane to comply with provincial legislation requiring their partial removal, according to a staff report going to infrastructure committee next week. The report says the redesign preserves a protected lane on 60 per cent of the corridor while restoring a traffic lane on the remainder, and estimates completion in November. City data cited in the report shows cycling volumes on Bloor averaged 7,900 daily trips last summer. Mayor Olivia Chow said the city 'complied under protest' and confirmed the city obtained legal advice on further options, but declined to release it or say whether the city will pursue a challenge. Committee members from two suburban wards said the $2.1 million would be better spent on road resurfacing."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "Toronto has spent $2.1 million so far redesigning sections of the Bloor bike lane to comply with provincial legislation requiring partial removal, per a staff report headed to infrastructure committee. The redesign keeps a protected lane on 60 per cent of the corridor, restores a traffic lane on the rest, and is estimated to finish in November.\nMayor Chow says the city complied under protest and confirms it obtained legal advice on further options — but she has declined to release that advice or say whether the city will pursue a challenge. City data in the report shows Bloor carried an average of 7,900 daily cycling trips last summer. Two suburban committee members argue the $2.1 million would be better spent on resurfacing.\nWhichever side of the lane debate a resident is on, the open item is the same: the city is spending millions executing a decision it opposes, without saying what it intends to do next.",
+        "tags": ["bike lanes", "transit"],
+        "talking_points": [
+          {
+            "point": "The city has spent $2.1 million to date on a redesign required by provincial legislation, per the staff report.",
+            "source_reference": "The staff report cited in the article puts redesign spending at $2.1 million to date."
+          },
+          {
+            "point": "The Mayor confirmed the city has legal advice on further options but won't release it or say whether the city will challenge the law.",
+            "source_reference": "The article reports the Mayor confirming the advice exists while declining to release it or state next steps."
+          },
+          {
+            "point": "The corridor carried an average of 7,900 daily cycling trips last summer, per city data in the report.",
+            "source_reference": "The article cites city data showing 7,900 average daily trips on Bloor."
+          },
+          {
+            "point": "The redesign preserves protection on 60 per cent of the corridor and is due to finish in November — residents should be told if that date moves.",
+            "source_reference": "The staff report, per the article, describes the 60 per cent figure and November completion estimate."
+          }
+        ],
+        "suggested_ask": "I'm asking the Mayor to state publicly whether the city will challenge the provincial bike-lane law, and to publish the redesign's final cost when it completes.",
+        "tone_note": "This is a story people feel strongly about on both sides — the staffer answering hears all of it. Be firm about your ask, and skip the argument.",
+        "levels": ["municipal", "provincial"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "First 340 rent-geared-to-income units open under city housing plan; Chow says 1,100 more by end of 2027",
+        "source_name": "NOW Toronto",
+        "published_at": "2026-06-03T10:00:00Z",
+        "body_excerpt": "The first 340 rent-geared-to-income units built on city-owned land under Toronto's housing plan opened this week at two sites in Weston and Downsview, with rents capped at 30 per cent of household income. The buildings were financed through a combination of city land contributions, $96 million from the federal Build Canada Homes program, and city-issued housing bonds. Mayor Olivia Chow said 1,100 additional units across five sites will open by the end of 2027. A city housing dashboard lists three of those five sites as 'in construction' and two as 'in procurement.' The city's housing advocate welcomed the openings while noting the centralized waiting list for rent-geared-to-income housing stood at 85,000 households as of March."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "The first 340 rent-geared-to-income units built on city-owned land under Toronto's housing plan opened this week in Weston and Downsview, with rents capped at 30 per cent of household income. The projects combined city land, $96 million from the federal Build Canada Homes program, and city-issued housing bonds.\nMayor Chow says 1,100 more units across five sites will open by the end of 2027. The city's own dashboard currently lists three of those sites in construction and two still in procurement — a checkable measure of whether the commitment is on track.\nThe city's housing advocate welcomed the openings while noting the rent-geared-to-income waiting list stood at 85,000 households in March, which puts the scale of these openings in context.",
+        "tags": ["housing"],
+        "talking_points": [
+          {
+            "point": "340 rent-geared-to-income units are now open at two sites, with rent capped at 30 per cent of household income.",
+            "source_reference": "The article reports 340 units opened in Weston and Downsview with the 30 per cent rent cap."
+          },
+          {
+            "point": "The Mayor has committed to 1,100 more units by end of 2027, and the city's dashboard shows two of the five sites still in procurement.",
+            "source_reference": "The article cites the Mayor's commitment and the dashboard status of three sites in construction, two in procurement."
+          },
+          {
+            "point": "The waiting list stood at 85,000 households in March, so the pace of new openings matters as much as each announcement.",
+            "source_reference": "The article quotes the city's housing advocate citing the 85,000-household waiting list."
+          }
+        ],
+        "suggested_ask": "I'm asking the Mayor's office to confirm the two housing sites still in procurement will break ground in time to open by end of 2027.",
+        "tone_note": "If you support these openings, say so — then ask your one question about the 2027 sites. Appreciation with a follow-up gets logged just like a complaint.",
+        "levels": ["municipal", "federal"]
+      }
+    },
+    {
+      "article_stub": {
+        "title": "Police budget request adds $67 million; board deferred motion to report response-time results from last increase",
+        "source_name": "CBC Toronto",
+        "published_at": "2026-04-30T17:00:00Z",
+        "body_excerpt": "The Toronto Police Service has submitted a 2027 budget request seeking a $67-million increase, or 4.9 per cent, primarily for 320 new hires and contractually obligated salary increases. At Thursday's police board meeting, a motion requiring the service to report publicly on response-time and clearance-rate results from the previous two budget increases was deferred to the fall without discussion. Mayor Olivia Chow, who holds a seat on the board, voted with the majority to defer. The service's last public performance report, covering 2024, showed priority-one response times averaging 19.2 minutes against a 15-minute internal target. Council will vote on the budget envelope in December."
+      },
+      "output": {
+        "relevant": true,
+        "summary": "The Toronto Police Service is requesting a $67-million budget increase for 2027 — 4.9 per cent — primarily for 320 new hires and contractual salary obligations. Council votes on the budget envelope in December.\nAt Thursday's police board meeting, a motion requiring the service to publicly report response-time and clearance-rate results from the previous two budget increases was deferred to the fall without discussion. Mayor Chow, who sits on the board, voted with the majority to defer.\nThe service's last public performance report, covering 2024, showed priority-one response times averaging 19.2 minutes against a 15-minute internal target. Deferring the reporting motion means council may vote on the new increase before seeing what the last ones delivered.",
+        "tags": ["police budget"],
+        "talking_points": [
+          {
+            "point": "The service is asking for $67 million more while a motion to report results from the last two increases was deferred without discussion.",
+            "source_reference": "The article reports the $67-million request and the board's deferral of the performance-reporting motion."
+          },
+          {
+            "point": "The Mayor sits on the police board and voted with the majority to defer the reporting motion.",
+            "source_reference": "The article states Mayor Chow voted with the majority to defer."
+          },
+          {
+            "point": "The last public performance report showed priority-one response times of 19.2 minutes against a 15-minute target.",
+            "source_reference": "The article cites the 2024 report's 19.2-minute average against the internal 15-minute target."
+          },
+          {
+            "point": "Council votes on the budget in December, so the performance data would need to come back from deferral in time to inform that vote.",
+            "source_reference": "The article notes the December council vote and the motion's deferral to the fall."
+          }
+        ],
+        "suggested_ask": "I'm asking the Mayor to bring the police performance-reporting motion back before council votes on the budget in December.",
+        "tone_note": "Board and budget questions are fair game, but the staffer answering isn't on the board. One specific ask, stated respectfully, is what travels.",
+        "levels": ["municipal"]
+      }
+    }
+  ]
+}

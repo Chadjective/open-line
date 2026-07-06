@@ -20,11 +20,26 @@ import { fetchFreshArticles, loadInstance } from './fetch-articles.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROMPT_PATH = resolve(__dirname, 'prompts', 'summarize-and-extract.txt');
+const EXEMPLARS_PATH = resolve(__dirname, 'prompts', 'EXEMPLARS.json');
 const MAX_ARTICLES = 200;
+const MAX_FEWSHOT = 2; // curated exemplars prepended per call to anchor the voice
 export const LEVELS = ['federal', 'provincial', 'municipal'];
 
 export function loadTemplate() {
   return readFileSync(PROMPT_PATH, 'utf8');
+}
+
+// Curated per-instance gold-standard exemplars (prompts/EXEMPLARS.json). Optional:
+// if the file is absent or malformed, few-shot is simply skipped and behavior is unchanged.
+let _exemplars;
+function loadExemplars() {
+  if (_exemplars !== undefined) return _exemplars;
+  try {
+    _exemplars = existsSync(EXEMPLARS_PATH) ? JSON.parse(readFileSync(EXEMPLARS_PATH, 'utf8')) : {};
+  } catch {
+    _exemplars = {};
+  }
+  return _exemplars;
 }
 
 // --- provider (the only piece to swap for a different summarizer) -----------
@@ -79,6 +94,29 @@ function buildPrompt(template, config, article) {
     .replaceAll('{{article.body}}', article.body || '');
 }
 
+// Build few-shot user/assistant message pairs from the instance's curated exemplars.
+// Each pair mirrors the exact live prompt: the article stub rendered through buildPrompt,
+// answered by the gold-standard JSON output — so the model imitates the voice, not just the schema.
+function buildFewShot(template, config) {
+  const all = loadExemplars();
+  const list = Array.isArray(all[config.instance_id]) ? all[config.instance_id] : [];
+  const msgs = [];
+  for (const ex of list.slice(0, MAX_FEWSHOT)) {
+    if (!ex || !ex.output) continue;
+    const stub = ex.article_stub || {};
+    const article = {
+      title: stub.title || '',
+      source_name: stub.source_name || '',
+      source_url: stub.source_url || '',
+      published_at: stub.published_at || '',
+      body: stub.body_excerpt || stub.body || '',
+    };
+    msgs.push({ role: 'user', content: buildPrompt(template, config, article) });
+    msgs.push({ role: 'assistant', content: JSON.stringify(ex.output) });
+  }
+  return msgs;
+}
+
 // Strict JSON schema; tags constrained to the instance's topic_tags, levels to the three tiers.
 function outputSchema(config) {
   return {
@@ -123,7 +161,10 @@ export function validate(obj) {
 // not relevant to THIS official's accountability.
 export async function summarizeArticle(template, config, article) {
   const parsed = await callModel(
-    [{ role: 'user', content: buildPrompt(template, config, article) }],
+    [
+      ...buildFewShot(template, config),
+      { role: 'user', content: buildPrompt(template, config, article) },
+    ],
     outputSchema(config),
   );
   const out = validate(parsed);
