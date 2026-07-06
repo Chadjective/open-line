@@ -1,0 +1,56 @@
+{
+  "instance_id": "calldoug",
+  "platform_name": "CallDoug",
+  "tagline": "Ontario's premier is accountable. Make it count.",
+  "accent_color": "#B33A1F",
+  "politician": {
+    "name": "Doug Ford",
+    "title": "Premier of Ontario",
+    "jurisdiction": "Ontario (provincial)",
+    "office_term_note": "Premier since 2018"
+  },
+  "level": "provincial",
+  "contacts": {
+    "primary": {
+      "label": "Premier's Office",
+      "phone": "+14163251941",
+      "display_phone": "416-325-1941"
+    },
+    "secondary": {
+      "label": "Premier's Office (direct)",
+      "phone": "+14163257635",
+      "display_phone": "416-325-7635"
+    },
+    "email": "premier@ontario.ca",
+    "mailing_address": "Legislative Building, Queen's Park, Toronto ON M7A 1A1",
+    "find_my_rep": {
+      "label": "Find my MPP",
+      "url": "https://www.ola.org/en/members/current"
+    }
+  },
+  "rss_sources": [
+    { "name": "CBC Ontario", "url": "https://www.cbc.ca/webfeed/rss/rss-canada-toronto" },
+    { "name": "The Narwhal", "url": "https://thenarwhal.ca/feed/" },
+    { "name": "The Breach", "url": "https://breachmedia.ca/feed/" },
+    { "name": "Ricochet", "url": "https://ricochet.media/feed/" }
+  ],
+  "filter_keywords": [
+    "Doug Ford",
+    "Ford government",
+    "Ontario premier",
+    "Premier Ford",
+    "Queen's Park"
+  ],
+  "topic_tags": [
+    "healthcare",
+    "housing",
+    "greenbelt",
+    "education",
+    "transit",
+    "labour",
+    "environment",
+    "affordability"
+  ],
+  "editorial_stance": "accountability_journalism",
+  "prompt_variant": "provincial_leader"
+}

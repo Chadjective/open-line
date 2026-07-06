@@ -1,0 +1,48 @@
+{
+  "instance_id": "callchow",
+  "platform_name": "CallChow",
+  "tagline": "Toronto's mayor works for you. Make the call.",
+  "accent_color": "#E08A2B",
+  "politician": {
+    "name": "Olivia Chow",
+    "title": "Mayor of Toronto",
+    "jurisdiction": "Toronto (municipal)",
+    "office_term_note": "Mayor since 2023"
+  },
+  "level": "municipal",
+  "contacts": {
+    "primary": {
+      "label": "Mayor's Office",
+      "phone": "+14163972489",
+      "display_phone": "416-397-2489"
+    },
+    "email": "mayor_chow@toronto.ca",
+    "mailing_address": "Office of the Mayor, Toronto City Hall, 100 Queen Street West, Toronto ON M5H 2N2",
+    "find_my_rep": {
+      "label": "Find my Councillor",
+      "url": "https://www.toronto.ca/city-government/council/members-of-council/"
+    }
+  },
+  "rss_sources": [
+    { "name": "CBC Toronto", "url": "https://www.cbc.ca/webfeed/rss/rss-canada-toronto" },
+    { "name": "NOW Toronto", "url": "https://nowtoronto.com/feed" },
+    { "name": "TorontoToday", "url": "https://www.torontotoday.ca/rss" }
+  ],
+  "filter_keywords": [
+    "Olivia Chow",
+    "Mayor Chow",
+    "Toronto mayor",
+    "Toronto City Hall",
+    "Toronto council"
+  ],
+  "topic_tags": [
+    "transit",
+    "housing",
+    "police budget",
+    "bike lanes",
+    "TTC",
+    "parks"
+  ],
+  "editorial_stance": "accountability_journalism",
+  "prompt_variant": "municipal_leader"
+}

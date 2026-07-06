@@ -1,0 +1,19 @@
+{
+  "name": "{{platform_name}}",
+  "short_name": "{{short_name}}",
+  "description": "{{tagline}}",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0D0D1F",
+  "theme_color": "{{accent_color}}",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

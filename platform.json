@@ -1,0 +1,16 @@
+{
+  "name": "Open Line",
+  "tagline": "Read. Prep. Call. At every level.",
+  "home_url": "../",
+  "analytics": {
+    "enabled": false,
+    "provider": "plausible",
+    "src": "https://plausible.io/js/script.js",
+    "domain": ""
+  },
+  "siblings": [
+    { "instance_id": "calldoug", "platform_name": "CallDoug", "url": "https://calldoug.ca", "level": "provincial" },
+    { "instance_id": "callcarney", "platform_name": "CallCarney", "url": "https://callcarney.ca", "level": "federal" },
+    { "instance_id": "callchow", "platform_name": "CallChow", "url": "https://callchow.ca", "level": "municipal" }
+  ]
+}

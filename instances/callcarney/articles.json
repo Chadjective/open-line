@@ -1,0 +1,137 @@
+{
+  "instance_id": "callcarney",
+  "last_updated": "2026-06-09T14:00:00Z",
+  "articles": [
+    {
+      "id": "2026-06-07-pmo-g7-france-ireland-travel",
+      "title": "Carney to visit France and Ireland and attend the G7 summit",
+      "source_name": "Prime Minister of Canada",
+      "source_url": "https://www.pm.gc.ca/en/news/news-releases/2026/06/07/prime-minister-carney-travel-france-ireland-and-2026-g7-leaders",
+      "published_at": "2026-06-07T12:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Prime Minister Mark Carney will travel from June 11 to 17, 2026 for bilateral visits to France and Ireland and to take part in the 2026 G7 Leaders' Summit in Évian, France. The government frames the trip around deepening Canada's partnerships on trade, defence, and technology.\nInternational summits commit Canada to positions on trade and security that affect people at home. Constituents have a reasonable interest in what the Prime Minister will push for and what he will agree to on their behalf.",
+      "tags": ["foreign affairs", "trade"],
+      "talking_points": [
+        { "point": "Canadians should know what trade and defence positions the Prime Minister will advance at the G7.", "source_reference": "The PMO release says the trip aims to deepen partnerships across trade, defence, and technology." },
+        { "point": "Commitments made at international summits should be reported back to Parliament and the public.", "source_reference": "The PMO release confirms travel June 11–17 for France, Ireland, and the G7 in Évian." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister's Office to report publicly on what Canada committed to at the 2026 G7 summit.",
+      "tone_note": "Staff answer the PMO line. Be brief and respectful."
+    },
+    {
+      "id": "2026-06-04-cbc-ai-for-all-strategy",
+      "title": "Carney's $2-billion AI strategy promises 250,000 jobs — and raises questions",
+      "source_name": "CBC News",
+      "source_url": "https://www.cbc.ca/news/politics/carney-ai-strategy-9.7223236",
+      "published_at": "2026-06-04T14:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Prime Minister Mark Carney launched 'AI for All,' a national artificial-intelligence strategy backed by more than $2-billion. The government says it targets an additional $200-billion in economic growth and 250,000 new AI-related jobs over the next five years, and aims to raise AI adoption from just over 12 per cent to 60 per cent by 2034.\nThose are large projections. They invite scrutiny of how the jobs and growth will be measured, who benefits, and what safeguards accompany rapid AI adoption.",
+      "tags": ["economy"],
+      "talking_points": [
+        { "point": "A target of 250,000 new jobs should come with a clear way to measure and report progress.", "source_reference": "CBC reports the strategy aims to create 250,000 AI-related jobs over five years." },
+        { "point": "Public investment of more than $2-billion warrants transparency on where the money goes.", "source_reference": "CBC reports over $2-billion in funding for the AI strategy." },
+        { "point": "Rapidly raising AI adoption should be paired with safeguards for workers and consumers.", "source_reference": "CBC reports a goal of increasing AI adoption from just over 12% to 60% by 2034." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister to publish measurable milestones and worker safeguards for the AI for All strategy.",
+      "tone_note": "You're speaking with staff who relay messages. Keep it respectful."
+    },
+    {
+      "id": "2026-05-28-globe-promises-status-report",
+      "title": "Status report: Carney has changed government fast, but many pledges lag",
+      "source_name": "The Globe and Mail",
+      "source_url": "https://www.theglobeandmail.com/canada/article-mark-carney-top-promises-status-report/",
+      "published_at": "2026-05-28T16:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "A status report on Prime Minister Mark Carney's top promises finds rapid early changes to how government operates, but a gap between commitments and delivery. By one tracker's count, only about 31 per cent of pledges had been implemented, and the promised surge in home-building had not yet materialized.\nHolding any government to its own commitments is core accountability work. This is a chance to ask which promises are on track and which have slipped.",
+      "tags": ["economy", "housing", "trade"],
+      "talking_points": [
+        { "point": "If only about 31 per cent of pledges are implemented, constituents deserve a clear timeline for the rest.", "source_reference": "The Globe cites a tracker reporting roughly 31% of pledges implemented." },
+        { "point": "The promised acceleration in home-building has not yet shown up and needs an honest status update.", "source_reference": "The Globe reports the promised home-building boom had not materialized." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister to publish a plain-language progress update on his signature housing and economic promises.",
+      "tone_note": "Staff take the call. Be concise and respectful."
+    },
+    {
+      "id": "2026-05-10-deeded-build-canada-homes",
+      "title": "Carney's housing plan pledges 500,000 homes a year — delivery is the test",
+      "source_name": "Deeded",
+      "source_url": "https://www.deeded.ca/blog/how-mark-carneys-housing-plan-aims-to-solve-canadas-affordability-crisis",
+      "published_at": "2026-05-10T10:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Prime Minister Mark Carney's housing plan aims to nearly double construction to around 500,000 new homes a year over the next decade, led by a federal entity, Build Canada Homes, that would provide more than $25-billion in financing to prefabricated-home builders, particularly on public land.\nThe ambition is large; the open question is delivery. Reporting notes the promised wartime-scale building boom and a new modular-housing industry have not yet materialized, which is exactly what citizens should track.",
+      "tags": ["housing", "affordability"],
+      "talking_points": [
+        { "point": "A target near 500,000 homes a year needs visible annual progress to be credible.", "source_reference": "Deeded reports the plan aims to nearly double construction to roughly 500,000 homes a year." },
+        { "point": "Build Canada Homes' $25-billion in financing should come with public reporting on homes actually built.", "source_reference": "Deeded reports Build Canada Homes would provide over $25-billion to prefab builders." },
+        { "point": "The promised building boom hasn't yet materialized, so constituents should ask what's holding it up.", "source_reference": "Reporting notes the promised boom and modular-housing industry have not materialized." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister to publish annual home-construction targets and actual completions under Build Canada Homes.",
+      "tone_note": "Be respectful with the staff who answer the line."
+    },
+    {
+      "id": "2026-04-20-thehub-housing-trade-factcheck",
+      "title": "Fact-checking Carney's housing and trade claims to Canadians",
+      "source_name": "The Hub",
+      "source_url": "https://thehub.ca/2026/04/20/fact-checking-mark-carneys-housing-and-trade-deal-claims-in-video-address-to-canadians/",
+      "published_at": "2026-04-20T11:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "A fact-check of Prime Minister Mark Carney's video address to Canadians examines his claims on housing and trade, including a pledge to double non-U.S. exports to roughly $600-billion a year by 2035 and signs of export diversification.\nFact-checks are a useful accountability tool: they let citizens separate what has been delivered from what remains a target, and ask the office for evidence behind headline claims.",
+      "tags": ["trade", "economy", "housing"],
+      "talking_points": [
+        { "point": "A pledge to double non-U.S. exports by 2035 should be backed by year-over-year data, not just projections.", "source_reference": "The Hub examines Carney's claim to double non-U.S. exports to about $600-billion a year by 2035." },
+        { "point": "Citizens are entitled to the evidence behind housing and trade claims made in national addresses.", "source_reference": "The Hub fact-checks the housing and trade claims in Carney's video address." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister's Office to publish the data behind its export and housing claims.",
+      "tone_note": "Staff relay these messages. Keep it factual and respectful."
+    },
+    {
+      "id": "2026-03-30-pmo-ontario-housing-partnership",
+      "title": "Carney signs Ontario housing deal to cut up to $200,000 in home costs",
+      "source_name": "Prime Minister of Canada",
+      "source_url": "https://www.pm.gc.ca/en/news/news-releases/2026/03/30/prime-minister-carney-secures-new-partnership-ontario-cut-taxes",
+      "published_at": "2026-03-30T15:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Prime Minister Mark Carney announced a new partnership with Ontario to cut taxes on housing and boost supply, which the governments say will reduce taxes and fees on a home in Ontario by up to $200,000. The deal spans federal and provincial responsibilities for homes, infrastructure, and transit.\nBecause two governments share credit for the announcement, it's fair to ask the federal office exactly which commitments Ottawa is responsible for delivering, and by when.",
+      "tags": ["housing", "affordability"],
+      "talking_points": [
+        { "point": "The federal government should specify which parts of the up-to-$200,000 saving it is responsible for delivering.", "source_reference": "The PMO release says the partnership will cut taxes and fees on an Ontario home by up to $200,000." },
+        { "point": "Joint announcements need clear federal milestones so accountability isn't lost between governments.", "source_reference": "The PMO release frames it as a Canada–Ontario partnership to cut housing taxes and boost supply." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister to publish Ottawa's specific deliverables and timelines under the Canada–Ontario housing partnership.",
+      "tone_note": "Be brief and respectful with PMO staff.",
+      "levels": ["federal", "provincial", "municipal"]
+    },
+    {
+      "id": "2026-02-13-carboncredits-carbon-tax-cbam",
+      "title": "Carney scraps consumer carbon tax, pivots to carbon border tariffs",
+      "source_name": "Carbon Credits",
+      "source_url": "https://carboncredits.com/mark-carneys-climate-strategy-balancing-carbon-policy-trade-and-energy-security/",
+      "published_at": "2026-02-13T10:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "One of Mark Carney's first moves as Prime Minister was to scrap the consumer carbon tax, which was introduced in 2019 and had been scheduled to reach $170 per tonne by 2030. In its place, the government has signalled a Carbon Border Adjustment Mechanism that would set tariffs on imports from countries with weaker carbon rules.\nThe shift changes who pays for climate policy and how emissions are curbed. Citizens can reasonably ask how the new approach will cut emissions and what it means for prices and trade.",
+      "tags": ["climate", "energy", "trade"],
+      "talking_points": [
+        { "point": "Removing the consumer carbon tax raises the question of what replaces it to keep emissions falling.", "source_reference": "Carbon Credits reports Carney scrapped the consumer carbon tax that was set to reach $170/tonne by 2030." },
+        { "point": "A carbon border tariff affects trade partners and import prices and deserves clear public detail.", "source_reference": "Carbon Credits reports plans for a Carbon Border Adjustment Mechanism on imports from weaker-carbon countries." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister to show how the new climate plan will meet Canada's emissions targets.",
+      "tone_note": "Staff answer the line. Be respectful and to the point."
+    },
+    {
+      "id": "2026-05-22-globe-climate-not-yet-transformed",
+      "title": "A government changed quickly, but a climate agenda not yet delivered",
+      "source_name": "The Globe and Mail",
+      "source_url": "https://www.theglobeandmail.com/politics/opinion/article-carney-climate-environment-guilbeault-campaign-promises/",
+      "published_at": "2026-05-22T13:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Commentary on Prime Minister Mark Carney's first year argues he has changed how government works at speed, but that the country has not yet been transformed on climate and the environment, with several campaign promises still unfulfilled.\nThe piece is opinion, but it points to a concrete accountability question: which climate and environment commitments remain outstanding, and what is the plan to deliver them.",
+      "tags": ["climate", "economy"],
+      "talking_points": [
+        { "point": "Outstanding climate and environment promises should have a stated delivery plan and timeline.", "source_reference": "The Globe commentary argues the country has not yet been transformed on climate despite rapid government change." },
+        { "point": "Voters who prioritized climate deserve to know which commitments are still on the table.", "source_reference": "The Globe piece references unfulfilled campaign promises on climate and the environment." }
+      ],
+      "suggested_ask": "I'm asking the Prime Minister to set out which climate commitments remain outstanding and when they'll be delivered.",
+      "tone_note": "Be respectful — staff take the message, not the Prime Minister."
+    }
+  ]
+}

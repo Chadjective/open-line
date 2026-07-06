@@ -1,0 +1,56 @@
+{
+  "instance_id": "callcarney",
+  "platform_name": "CallCarney",
+  "tagline": "The Prime Minister works for you. Tell him how.",
+  "accent_color": "#0E7C7B",
+  "politician": {
+    "name": "Mark Carney",
+    "title": "Prime Minister of Canada",
+    "jurisdiction": "Canada (federal)",
+    "office_term_note": "Prime Minister since 2025"
+  },
+  "level": "federal",
+  "contacts": {
+    "primary": {
+      "label": "Prime Minister's Office",
+      "phone": "+16139924211",
+      "display_phone": "613-992-4211"
+    },
+    "secondary": {
+      "label": "Constituency Office (Nepean)",
+      "phone": "+16138253422",
+      "display_phone": "613-825-3422"
+    },
+    "email": "pm@pm.gc.ca",
+    "mailing_address": "Office of the Prime Minister, 80 Wellington Street, Ottawa ON K1A 0A2",
+    "find_my_rep": {
+      "label": "Find my MP",
+      "url": "https://www.ourcommons.ca/members/en/search"
+    }
+  },
+  "rss_sources": [
+    { "name": "CBC Politics", "url": "https://www.cbc.ca/webfeed/rss/rss-politics" },
+    { "name": "The Narwhal", "url": "https://thenarwhal.ca/feed/" },
+    { "name": "The Breach", "url": "https://breachmedia.ca/feed/" },
+    { "name": "Ricochet", "url": "https://ricochet.media/feed/" }
+  ],
+  "filter_keywords": [
+    "Mark Carney",
+    "Carney government",
+    "Prime Minister Carney",
+    "PMO",
+    "federal government"
+  ],
+  "topic_tags": [
+    "economy",
+    "immigration",
+    "climate",
+    "housing",
+    "trade",
+    "foreign affairs",
+    "affordability",
+    "energy"
+  ],
+  "editorial_stance": "accountability_journalism",
+  "prompt_variant": "national_leader"
+}

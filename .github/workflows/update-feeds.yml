@@ -1,0 +1,63 @@
+name: Update feeds
+
+# Runs the Open Line pipeline daily, refreshing every instance's articles.json.
+# One workflow covers all instances (update.mjs --all auto-discovers them), so
+# adding a new instance needs no workflow change.
+on:
+  schedule:
+    # 11:00 UTC daily (~6-7am Eastern). Change to '0 */4 * * *' for every 4 hours.
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+    inputs:
+      instance:
+        description: 'Single instance id (blank = all)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write # needed to commit the refreshed articles.json
+  models: read # free GitHub Models inference via the built-in GITHUB_TOKEN
+
+concurrency:
+  group: update-feeds
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Run pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # free GitHub Models inference (no secret to add)
+        run: |
+          if [ -n "${{ github.event.inputs.instance }}" ]; then
+            node pipeline/update.mjs "${{ github.event.inputs.instance }}"
+          else
+            node pipeline/update.mjs --all
+          fi
+
+      - name: Commit refreshed feeds
+        run: |
+          git config user.name  "open-line-bot"
+          git config user.email "bot@openline.ca"
+          if git diff --quiet -- instances/; then
+            echo "No feed changes."
+          else
+            git add instances/
+            # No [skip ci] — this push intentionally triggers deploy.yml to publish the new feeds.
+            git commit -m "chore: refresh article feeds"
+            git push
+          fi

@@ -1,0 +1,28 @@
+{
+  "name": "open-line",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Config-driven civic-engagement PWA platform. One codebase, one config.json per politician.",
+  "scripts": {
+    "dev": "INSTANCE=${INSTANCE:-calldoug} vite",
+    "dev:calldoug": "INSTANCE=calldoug vite",
+    "dev:callcarney": "INSTANCE=callcarney vite",
+    "dev:callchow": "INSTANCE=callchow vite",
+    "build": "node scripts/build-all.mjs",
+    "build:calldoug": "INSTANCE=calldoug vite build",
+    "build:callcarney": "INSTANCE=callcarney vite build",
+    "build:callchow": "INSTANCE=callchow vite build",
+    "preview:calldoug": "vite preview --outDir dist/calldoug",
+    "preview:callcarney": "vite preview --outDir dist/callcarney",
+    "preview:callchow": "vite preview --outDir dist/callchow",
+    "update": "node pipeline/update.mjs --all",
+    "update:dry": "node pipeline/update.mjs --all --dry-run"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
