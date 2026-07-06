@@ -8,6 +8,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Self-healing republish an hour after the daily feed refresh — the Pages backend
+    # occasionally fails a deployment transiently ("try again later"); this guarantees
+    # the site never stays stale longer than a day even if a dispatched deploy flakes.
+    - cron: '0 12 * * *'
 
 permissions:
   contents: read
