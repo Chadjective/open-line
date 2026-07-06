@@ -17,6 +17,7 @@ on:
 permissions:
   contents: write # needed to commit the refreshed articles.json
   models: read # free GitHub Models inference via the built-in GITHUB_TOKEN
+  actions: write # needed to dispatch the deploy workflow after a feed commit
 
 concurrency:
   group: update-feeds
@@ -50,14 +51,25 @@ jobs:
           fi
 
       - name: Commit refreshed feeds
+        id: commit
         run: |
           git config user.name  "open-line-bot"
           git config user.email "bot@openline.ca"
           if git diff --quiet -- instances/; then
             echo "No feed changes."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git add instances/
-            # No [skip ci] — this push intentionally triggers deploy.yml to publish the new feeds.
             git commit -m "chore: refresh article feeds"
             git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Pushes made with GITHUB_TOKEN never fire other workflows' `on: push` (loop
+      # prevention), so publish the new feeds via an explicit workflow_dispatch — the
+      # documented exception to that rule.
+      - name: Trigger deploy
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
