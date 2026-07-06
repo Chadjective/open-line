@@ -63,6 +63,8 @@ jobs:
             git add -A instances/
             [ -d review ] && git add -A review/
             git commit -m "chore: refresh article feeds"
+            # main may have moved while the pipeline ran — rebase our feed commit onto it
+            git pull --rebase origin main
             git push
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
