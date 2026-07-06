@@ -75,7 +75,7 @@ function extractArticleText(html = '') {
   const paras = [...scope.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
     .map((x) => stripHtml(x[1]))
     .filter((t) => t.length > 40);
-  return paras.join('\n').slice(0, 8000);
+  return paras.join('\n').slice(0, 6000);
 }
 
 async function fetchPageBody(url) {
@@ -102,9 +102,9 @@ async function fetchPageBody(url) {
 // Best available body: prefer the feed's full content, fall back to the page.
 async function bestBody(item, link) {
   const feedBody = stripHtml(item.contentEncoded || item.content || item.contentSnippet || item.summary || '');
-  if (feedBody.length >= 800) return feedBody.slice(0, 8000);
+  if (feedBody.length >= 800) return feedBody.slice(0, 6000);
   const page = await fetchPageBody(link);
-  return (page.length > feedBody.length ? page : feedBody).slice(0, 8000);
+  return (page.length > feedBody.length ? page : feedBody).slice(0, 6000);
 }
 
 export async function fetchFreshArticles(instanceId) {

@@ -22,6 +22,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROMPT_PATH = resolve(__dirname, 'prompts', 'summarize-and-extract.txt');
 const EXEMPLARS_PATH = resolve(__dirname, 'prompts', 'EXEMPLARS.json');
 const VOICE_GUIDE_PATH = resolve(__dirname, 'prompts', 'VOICE_GUIDE.md');
+const VOICE_DIGEST_PATH = resolve(__dirname, 'prompts', 'VOICE_GUIDE_DIGEST.md');
 const MAX_ARTICLES = 200;
 const MAX_FEWSHOT = 2; // curated exemplars prepended per call to anchor the voice
 export const LEVELS = ['federal', 'provincial', 'municipal'];
@@ -31,12 +32,15 @@ export function loadTemplate() {
 }
 
 // The permanent editorial standard, sent as the system message on every call.
-// Optional like the exemplars: absent guide → no system message, behavior unchanged.
+// Prefers the operative digest (GitHub Models' free tier caps requests at 8k tokens;
+// the full guide alone is ~2.6k and blew the budget), falling back to the full guide.
+// Optional like the exemplars: absent both → no system message, behavior unchanged.
 let _voiceGuide;
 function loadVoiceGuide() {
   if (_voiceGuide !== undefined) return _voiceGuide;
   try {
-    _voiceGuide = existsSync(VOICE_GUIDE_PATH) ? readFileSync(VOICE_GUIDE_PATH, 'utf8') : '';
+    const path = existsSync(VOICE_DIGEST_PATH) ? VOICE_DIGEST_PATH : VOICE_GUIDE_PATH;
+    _voiceGuide = existsSync(path) ? readFileSync(path, 'utf8') : '';
   } catch {
     _voiceGuide = '';
   }
@@ -110,8 +114,10 @@ function buildPrompt(template, config, article) {
 }
 
 // Build few-shot user/assistant message pairs from the instance's curated exemplars.
-// Each pair mirrors the exact live prompt: the article stub rendered through buildPrompt,
-// answered by the gold-standard JSON output — so the model imitates the voice, not just the schema.
+// The user side is a COMPACT article stub (not the full rendered template — GitHub Models'
+// free tier caps requests at 8k tokens, and repeating the ~5KB template per pair blew the
+// budget with a 413). The instructions live once in the system message and once in the
+// live prompt; the gold-standard assistant JSON is what anchors the voice.
 function buildFewShot(template, config) {
   const all = loadExemplars();
   const list = Array.isArray(all[config.instance_id]) ? all[config.instance_id] : [];
@@ -119,14 +125,15 @@ function buildFewShot(template, config) {
   for (const ex of list.slice(0, MAX_FEWSHOT)) {
     if (!ex || !ex.output) continue;
     const stub = ex.article_stub || {};
-    const article = {
-      title: stub.title || '',
-      source_name: stub.source_name || '',
-      source_url: stub.source_url || '',
-      published_at: stub.published_at || '',
-      body: stub.body_excerpt || stub.body || '',
-    };
-    msgs.push({ role: 'user', content: buildPrompt(template, config, article) });
+    msgs.push({
+      role: 'user',
+      content:
+        `EXAMPLE ARTICLE (summarize for ${config.politician.name}, ${config.politician.title}):\n` +
+        `Title: ${stub.title || ''}\n` +
+        `Source: ${stub.source_name || ''}\n` +
+        `Published: ${stub.published_at || ''}\n` +
+        `Body:\n${stub.body_excerpt || stub.body || ''}`,
+    });
     // Exemplars are publish-worthy by construction; stamp the gate fields so few-shot
     // outputs match the live schema without editing the curated file.
     msgs.push({
