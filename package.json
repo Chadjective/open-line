@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Config-driven civic-engagement PWA platform. One codebase, one config.json per politician.",
+  "packageManager": "pnpm@11.5.2",
   "scripts": {
     "dev": "INSTANCE=${INSTANCE:-calldoug} vite",
     "dev:calldoug": "INSTANCE=calldoug vite",
