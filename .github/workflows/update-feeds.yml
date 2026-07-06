@@ -25,6 +25,8 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # The pipeline takes ~3 min; a hung process must never block the queue for 6h again.
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 

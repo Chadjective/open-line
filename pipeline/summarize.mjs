@@ -69,6 +69,7 @@ async function callModel(messages, schema, { retries = 3 } = {}) {
       }),
     });
     if ((res.status === 429 || res.status >= 500) && attempt < retries) {
+      await res.body?.cancel().catch(() => {}); // don't leak the abandoned body's socket
       const wait = Number(res.headers.get('retry-after')) * 1000 || 2 ** attempt * 5000;
       await new Promise((r) => setTimeout(r, wait));
       continue;

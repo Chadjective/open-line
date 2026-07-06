@@ -73,18 +73,23 @@ function extractArticleText(html = '') {
 }
 
 async function fetchPageBody(url) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 12000);
   try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), 12000);
     const res = await fetch(url, {
       signal: ctrl.signal,
       headers: { 'User-Agent': 'OpenLineBot/1.0 (+https://openline.ca)' },
     });
-    clearTimeout(t);
-    if (!res.ok) return '';
+    if (!res.ok) {
+      // Abandoned response bodies hold sockets open and can keep the process alive — cancel.
+      await res.body?.cancel().catch(() => {});
+      return '';
+    }
     return extractArticleText(await res.text());
   } catch {
     return '';
+  } finally {
+    clearTimeout(t);
   }
 }
 

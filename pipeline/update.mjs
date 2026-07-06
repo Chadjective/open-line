@@ -161,3 +161,6 @@ if (failures) {
   console.error(`${failures} instance(s) failed.`);
   process.exit(1);
 }
+// Exit explicitly: lingering keep-alive sockets/timers from feed + model fetches can hold the
+// event loop open after all work is done — in CI that hung the job until the 6h kill switch.
+process.exit(0);
