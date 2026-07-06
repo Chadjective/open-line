@@ -134,6 +134,18 @@ The pipeline refreshes every instance's `articles.json` from live RSS:
   later (see Roadmap). Prepends results, trims to 200, rolls overflow into `instances/<id>/archive/YYYY-MM.json`.
 - `pipeline/update.mjs` — the entrypoint; `--all` auto-discovers every instance (no per-instance code).
 
+**Editorial voice + self-gate (the mixed-risk compromise).** Every model call carries
+`pipeline/prompts/VOICE_GUIDE.md` as the system message (the permanent non-partisan-but-persuasive
+standard) plus curated few-shot exemplars from `pipeline/prompts/EXEMPLARS.json`. After drafting,
+the model re-reads its own output as a hostile partisan critic; anything with an unsourced talking
+point, partisan framing, or an overreaching ask sets `hold_for_review` and does **not** publish.
+Held items land in `instances/<id>/held.json` (deduped, never retried silently) and surface in a
+**daily review digest GitHub issue** alongside the list of what auto-published — so the hourly/daily
+cadence stays autonomous while a human retroactively skims everything and pre-clears anything
+reputational. Review actions: `node pipeline/promote.mjs <instance> <article-id>` publishes a held
+item (then commit + push); leaving it in `held.json` rejects it permanently; deleting its entry lets
+the pipeline retry it fresh.
+
 **Cross-level stories.** Each instance declares a `level` (`federal`/`provincial`/`municipal`), and
 the summarizer reports which levels a story implicates. After every instance summarizes its own
 keyword matches, `update.mjs` runs a cross-post pass: a story flagged as multi-level is *offered* to

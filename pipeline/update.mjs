@@ -10,13 +10,14 @@
 // instances at those levels. Each instance's own prompt then validates relevance and
 // writes its own framing — so one federal/provincial/municipal story can land on all three.
 
-import { readdirSync, statSync, existsSync } from 'node:fs';
+import { readdirSync, statSync, existsSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   prepareInstance,
   summarizeArticle,
   commitInstance,
+  commitHeld,
   summarizeInstance,
   loadTemplate,
   modelToken,
@@ -89,16 +90,17 @@ if (dryRun || instances.length === 1) {
   const meta = live.map((p) => ({ id: p.id, level: p.config.level }));
 
   const newByInstance = Object.fromEntries(live.map((p) => [p.id, []]));
+  const heldByInstance = Object.fromEntries(live.map((p) => [p.id, []]));
   const rawById = new Map(); // id -> raw article (with body), from any feed
   const haveIds = new Map(); // articleId -> Set of instance ids that have it
-  const levelsById = new Map(); // articleId -> union of levels the model reported
+  const levelsById = new Map(); // articleId -> union of levels from PUBLISHED summaries
 
   const has = (articleId, instId) => (haveIds.get(articleId) || new Set()).has(instId);
   const mark = (articleId, instId) => {
     if (!haveIds.has(articleId)) haveIds.set(articleId, new Set());
     haveIds.get(articleId).add(instId);
   };
-  for (const p of live) for (const a of p.existing.articles) mark(a.id, p.id);
+  for (const p of live) for (const a of [...p.existing.articles, ...p.held.articles]) mark(a.id, p.id);
 
   // Pass 1 — each instance summarizes its own keyword matches.
   for (const p of live) {
@@ -111,8 +113,16 @@ if (dryRun || instances.length === 1) {
           console.log(`  [${p.id}] – skipped (irrelevant): ${article.title}`);
           continue;
         }
-        newByInstance[p.id].push(enriched);
         mark(article.id, p.id);
+        if (enriched.hold_for_review) {
+          // Self-gated: goes to the review digest, not the feed — and does NOT drive
+          // cross-posting (a story we won't publish here shouldn't be pushed elsewhere
+          // on our initiative; each instance can still match it via its own keywords).
+          heldByInstance[p.id].push(enriched);
+          console.log(`  [${p.id}] ⏸ held for review: ${article.title} — ${enriched.hold_reason}`);
+          continue;
+        }
+        newByInstance[p.id].push(enriched);
         const prev = levelsById.get(article.id) || new Set();
         enriched.levels.forEach((l) => prev.add(l));
         levelsById.set(article.id, prev);
@@ -138,8 +148,13 @@ if (dryRun || instances.length === 1) {
           console.log(`  → ${targetId}: not relevant to this office — skipped`);
           continue;
         }
-        newByInstance[targetId].push(enriched);
         mark(articleId, targetId);
+        if (enriched.hold_for_review) {
+          heldByInstance[targetId].push(enriched);
+          console.log(`  → ${targetId}: ⏸ held for review — ${enriched.hold_reason}`);
+          continue;
+        }
+        newByInstance[targetId].push(enriched);
         console.log(`  → ${targetId}: cross-posted "${raw.title}"`);
       } catch (err) {
         console.error(`  → ${targetId}: cross-post failed — ${err.message}`);
@@ -147,12 +162,52 @@ if (dryRun || instances.length === 1) {
     }
   }
 
-  // Pass 3 — write each instance's feed.
+  // Pass 3 — write each instance's feed and held registry.
   console.log('');
+  let totalHeld = 0;
   for (const p of live) {
+    const h = commitHeld(p, heldByInstance[p.id]);
+    totalHeld += h.held || 0;
     const r = commitInstance(p, newByInstance[p.id]);
     totalAdded += r.added || 0;
     if (r.added) console.log(`  [${p.id}] wrote ${r.added} new (feed now ${r.total})`);
+    if (h.held) console.log(`  [${p.id}] held ${h.held} for review`);
+  }
+
+  // Pass 4 — the daily human-review digest: what the gate held (with reasons and the
+  // full drafted output), plus everything that auto-published (retroactive review).
+  const reviewDir = resolve(__dirname, '..', 'review');
+  const digestPath = resolve(reviewDir, 'digest.md');
+  if (totalAdded || totalHeld) {
+    if (!existsSync(reviewDir)) mkdirSync(reviewDir, { recursive: true });
+    const lines = [`# OpenLine review digest — ${new Date().toISOString().slice(0, 10)}`, ''];
+    lines.push(`**${totalAdded} auto-published · ${totalHeld} held for review.**`, '');
+    if (totalHeld) {
+      lines.push(`## ⏸ Held for review (${totalHeld})`, '');
+      lines.push('Approve with `node pipeline/promote.mjs <instance> <article-id>`, or delete the entry from `instances/<instance>/held.json` to let the pipeline retry it fresh.', '');
+      for (const p of live) {
+        for (const a of heldByInstance[p.id]) {
+          lines.push(`### [${p.id}] ${a.title}`);
+          lines.push(`- **Why held:** ${a.hold_reason || '(no reason given)'}`);
+          lines.push(`- **Source:** ${a.source_name} — ${a.source_url}`);
+          lines.push(`- **Drafted ask:** ${a.suggested_ask}`);
+          lines.push('', '<details><summary>Full drafted output</summary>', '', '```json', JSON.stringify(a, null, 2), '```', '', '</details>', '');
+        }
+      }
+    }
+    if (totalAdded) {
+      lines.push(`## ✓ Auto-published (${totalAdded}) — retroactive review`, '');
+      for (const p of live) {
+        for (const a of newByInstance[p.id]) {
+          lines.push(`- **[${p.id}]** ${a.title} ([source](${a.source_url})) — ask: “${a.suggested_ask}”`);
+        }
+      }
+      lines.push('');
+    }
+    writeFileSync(digestPath, lines.join('\n'));
+    console.log(`\n  review digest written: review/digest.md`);
+  } else if (existsSync(digestPath)) {
+    rmSync(digestPath); // nothing this run — an empty digest shouldn't trigger an issue
   }
 }
 

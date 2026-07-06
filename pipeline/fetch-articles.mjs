@@ -32,7 +32,13 @@ export function loadInstance(instanceId) {
   const existing = existsSync(articlesPath)
     ? JSON.parse(readFileSync(articlesPath, 'utf8'))
     : { instance_id: instanceId, last_updated: null, articles: [] };
-  return { dir, articlesPath, config, existing };
+  // Items the self-gate held for human review. They count as "seen" for dedupe so a
+  // held story isn't re-fetched and re-summarized on every run while it awaits review.
+  const heldPath = resolve(dir, 'held.json');
+  const held = existsSync(heldPath)
+    ? JSON.parse(readFileSync(heldPath, 'utf8'))
+    : { instance_id: instanceId, articles: [] };
+  return { dir, articlesPath, heldPath, config, existing, held };
 }
 
 const slug = (s) =>
@@ -102,8 +108,8 @@ async function bestBody(item, link) {
 }
 
 export async function fetchFreshArticles(instanceId) {
-  const { config, existing } = loadInstance(instanceId);
-  const seen = new Set(existing.articles.map((a) => a.id));
+  const { config, existing, held } = loadInstance(instanceId);
+  const seen = new Set([...existing.articles, ...held.articles].map((a) => a.id));
 
   const entries = [];
   for (const source of config.rss_sources) {

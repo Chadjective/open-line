@@ -18,6 +18,7 @@ permissions:
   contents: write # needed to commit the refreshed articles.json
   models: read # free GitHub Models inference via the built-in GITHUB_TOKEN
   actions: write # needed to dispatch the deploy workflow after a feed commit
+  issues: write # needed to open the daily human-review digest issue
 
 concurrency:
   group: update-feeds
@@ -55,14 +56,32 @@ jobs:
         run: |
           git config user.name  "open-line-bot"
           git config user.email "bot@openline.ca"
-          if git diff --quiet -- instances/; then
+          if [ -z "$(git status --porcelain -- instances/ review/)" ]; then
             echo "No feed changes."
             echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
-            git add instances/
+            git add -A instances/
+            [ -d review ] && git add -A review/
             git commit -m "chore: refresh article feeds"
             git push
             echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # The mixed-risk compromise: everything ungated auto-publishes on cadence, and a
+      # human skims one digest issue per day — held items with reasons + what published.
+      - name: Open review digest issue
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s review/digest.md ]; then
+            DATE=$(date -u +%F)
+            EXISTING=$(gh issue list --state open --search "Review digest — $DATE in:title" --json number --jq '.[0].number // empty')
+            if [ -n "$EXISTING" ]; then
+              gh issue comment "$EXISTING" --body-file review/digest.md
+            else
+              gh issue create --title "Review digest — $DATE" --body-file review/digest.md
+            fi
           fi
 
       # Pushes made with GITHUB_TOKEN never fire other workflows' `on: push` (loop

@@ -36,8 +36,24 @@ Return ONLY valid JSON, no prose around it, matching exactly:
   ],
   "suggested_ask": "one sentence: a specific action to request of the office",
   "tone_note": "a short reminder that staff answer the phone and to be respectful",
-  "levels": ["every level of government whose decisions or accountability this story implicates"]
+  "levels": ["every level of government whose decisions or accountability this story implicates"],
+  "hold_for_review": false,
+  "hold_reason": ""
 }
+
+SELF-GATE — run this after drafting, before you output.
+Re-read your draft as a hostile partisan critic looking for one thing to screenshot and
+dismiss. Hold the output (set "hold_for_review": true and explain in "hold_reason") if ANY
+of these is true:
+- a talking_point is not directly checkable against the article text you were given;
+- any framing attributes conduct to party or character rather than describing the conduct;
+- the suggested_ask overreaches what the article's facts support, or falls outside this
+  office's jurisdiction;
+- the source article is itself so opinionated that a grounded, non-partisan summary
+  cannot be written from it without carrying its rhetoric.
+Held items do not publish this cycle; they go to a human review digest. When nothing
+trips the gate, set "hold_for_review": false and "hold_reason": "". Do not hold routine
+critical coverage merely because it is critical — grounded, sourced criticism publishes.
 
 For "levels", choose from: "federal", "provincial", "municipal". Include ALL that genuinely
 apply — not only {{politician.name}}'s level. Example: a housing announcement with federal

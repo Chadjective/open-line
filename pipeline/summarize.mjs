@@ -21,12 +21,26 @@ import { fetchFreshArticles, loadInstance } from './fetch-articles.mjs';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROMPT_PATH = resolve(__dirname, 'prompts', 'summarize-and-extract.txt');
 const EXEMPLARS_PATH = resolve(__dirname, 'prompts', 'EXEMPLARS.json');
+const VOICE_GUIDE_PATH = resolve(__dirname, 'prompts', 'VOICE_GUIDE.md');
 const MAX_ARTICLES = 200;
 const MAX_FEWSHOT = 2; // curated exemplars prepended per call to anchor the voice
 export const LEVELS = ['federal', 'provincial', 'municipal'];
 
 export function loadTemplate() {
   return readFileSync(PROMPT_PATH, 'utf8');
+}
+
+// The permanent editorial standard, sent as the system message on every call.
+// Optional like the exemplars: absent guide → no system message, behavior unchanged.
+let _voiceGuide;
+function loadVoiceGuide() {
+  if (_voiceGuide !== undefined) return _voiceGuide;
+  try {
+    _voiceGuide = existsSync(VOICE_GUIDE_PATH) ? readFileSync(VOICE_GUIDE_PATH, 'utf8') : '';
+  } catch {
+    _voiceGuide = '';
+  }
+  return _voiceGuide;
 }
 
 // Curated per-instance gold-standard exemplars (prompts/EXEMPLARS.json). Optional:
@@ -113,7 +127,12 @@ function buildFewShot(template, config) {
       body: stub.body_excerpt || stub.body || '',
     };
     msgs.push({ role: 'user', content: buildPrompt(template, config, article) });
-    msgs.push({ role: 'assistant', content: JSON.stringify(ex.output) });
+    // Exemplars are publish-worthy by construction; stamp the gate fields so few-shot
+    // outputs match the live schema without editing the curated file.
+    msgs.push({
+      role: 'assistant',
+      content: JSON.stringify({ ...ex.output, hold_for_review: false, hold_reason: '' }),
+    });
   }
   return msgs;
 }
@@ -123,9 +142,14 @@ function outputSchema(config) {
   return {
     type: 'object',
     additionalProperties: false,
-    required: ['relevant', 'summary', 'tags', 'talking_points', 'suggested_ask', 'tone_note', 'levels'],
+    required: [
+      'relevant', 'summary', 'tags', 'talking_points', 'suggested_ask', 'tone_note', 'levels',
+      'hold_for_review', 'hold_reason',
+    ],
     properties: {
       relevant: { type: 'boolean' },
+      hold_for_review: { type: 'boolean' },
+      hold_reason: { type: 'string' },
       summary: { type: 'string' },
       tags: { type: 'array', items: { type: 'string', enum: config.topic_tags } },
       talking_points: {
@@ -161,8 +185,17 @@ export function validate(obj) {
 // Returns the enriched article (incl. `levels`) or null if the model judges it
 // not relevant to THIS official's accountability.
 export async function summarizeArticle(template, config, article) {
+  const guide = loadVoiceGuide();
   const parsed = await callModel(
     [
+      ...(guide
+        ? [{
+            role: 'system',
+            content:
+              'You are OpenLine\'s summarize stage. The following voice guide is the permanent editorial standard for every output. Match it exactly.\n\n' +
+              guide,
+          }]
+        : []),
       ...buildFewShot(template, config),
       { role: 'user', content: buildPrompt(template, config, article) },
     ],
@@ -183,6 +216,8 @@ export async function summarizeArticle(template, config, article) {
     suggested_ask: out.suggested_ask,
     tone_note: out.tone_note,
     levels: Array.isArray(out.levels) ? out.levels.filter((l) => LEVELS.includes(l)) : [],
+    hold_for_review: out.hold_for_review === true,
+    hold_reason: typeof out.hold_reason === 'string' ? out.hold_reason : '',
   };
 }
 
@@ -213,17 +248,35 @@ export function trimAndArchive(dir, articles) {
 }
 
 export async function prepareInstance(id) {
-  const { dir, articlesPath, config, existing } = loadInstance(id);
+  const { dir, articlesPath, heldPath, config, existing, held } = loadInstance(id);
   const { fresh } = await fetchFreshArticles(id);
-  return { id, config, dir, articlesPath, existing, fresh };
+  return { id, config, dir, articlesPath, heldPath, existing, held, fresh };
+}
+
+// Record self-gated items in the instance's held registry (committed, not published).
+// A human reviews these via the digest; pipeline/promote.mjs moves an approved item
+// into the live feed, or deleting its entry makes it eligible for a fresh attempt.
+export function commitHeld(prep, heldArticles) {
+  if (!heldArticles.length) return { held: 0 };
+  const byId = new Map();
+  for (const a of [...heldArticles.map((x) => ({ ...x, held_at: new Date().toISOString() })), ...prep.held.articles]) {
+    if (!byId.has(a.id)) byId.set(a.id, a);
+  }
+  writeFileSync(
+    prep.heldPath,
+    JSON.stringify({ instance_id: prep.id, articles: [...byId.values()] }, null, 2) + '\n',
+  );
+  return { held: heldArticles.length };
 }
 
 // Merge newly-summarized articles into the instance feed and write it.
 export function commitInstance(prep, newArticles) {
   if (!newArticles.length) return { added: 0, total: prep.existing.articles.length };
+  // The gate fields are pipeline-internal — don't ship them in the public feed.
+  const cleaned = newArticles.map(({ hold_for_review, hold_reason, ...a }) => a);
   // de-dupe by id (a cross-posted article may also have matched this instance directly)
   const byId = new Map();
-  for (const a of [...newArticles, ...prep.existing.articles]) if (!byId.has(a.id)) byId.set(a.id, a);
+  for (const a of [...cleaned, ...prep.existing.articles]) if (!byId.has(a.id)) byId.set(a.id, a);
   const merged = trimAndArchive(prep.dir, [...byId.values()]);
   writeFileSync(
     prep.articlesPath,
@@ -242,20 +295,26 @@ export async function summarizeInstance(instanceId, { dryRun = false } = {}) {
   }
   const template = loadTemplate();
   const newOnes = [];
+  const heldOnes = [];
   for (const article of prep.fresh) {
     try {
       const enriched = await summarizeArticle(template, prep.config, article);
-      if (enriched) {
+      if (!enriched) {
+        console.log(`  [${instanceId}] – skipped (irrelevant): ${article.title}`);
+      } else if (enriched.hold_for_review) {
+        heldOnes.push(enriched);
+        console.log(`  [${instanceId}] ⏸ held for review: ${article.title} — ${enriched.hold_reason}`);
+      } else {
         newOnes.push(enriched);
         console.log(`  [${instanceId}] ✓ ${article.title}`);
-      } else {
-        console.log(`  [${instanceId}] – skipped (irrelevant): ${article.title}`);
       }
     } catch (err) {
       console.error(`  [${instanceId}] ✗ ${article.title} — ${err.message}`);
     }
   }
-  return commitInstance(prep, newOnes);
+  commitHeld(prep, heldOnes);
+  const r = commitInstance(prep, newOnes);
+  return { ...r, held: heldOnes.length };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
