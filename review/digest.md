@@ -1,0 +1,57 @@
+# OpenLine review digest — 2026-07-09
+
+**0 auto-published · 1 held for review.**
+
+## ⏸ Held for review (1)
+
+Approve with `node pipeline/promote.mjs <instance> <article-id>`, or delete the entry from `instances/<instance>/held.json` to let the pipeline retry it fresh.
+
+### [calldoug] Bill 5 is in, the climate plan is out: the environmental stakes of Doug Ford’s third term
+- **Why held:** The article contains opinionated language and framing that makes it difficult to provide a grounded, non-partisan summary without carrying its rhetoric. Specific claims about the implications of Bill 5 and the government's actions are not sufficiently supported by direct quotes or data, making it challenging to create checkable talking points.
+- **Source:** The Narwhal — https://thenarwhal.ca/ontario-election-ford-explainer/?utm_source=rss
+- **Drafted ask:** I'm asking the Premier to clarify how Bill 5 will protect environmental standards while promoting economic growth.
+
+<details><summary>Full drafted output</summary>
+
+```json
+{
+  "id": "2026-07-08-the-narwhal-bill-5-is-in-the-climate-plan-is-out-the-environ",
+  "title": "Bill 5 is in, the climate plan is out: the environmental stakes of Doug Ford’s third term",
+  "source_name": "The Narwhal",
+  "source_url": "https://thenarwhal.ca/ontario-election-ford-explainer/?utm_source=rss",
+  "published_at": "2026-07-08T12:00:00.000Z",
+  "fetched_at": "2026-07-09T13:52:42.607Z",
+  "summary": "The article discusses the implications of Bill 5, which allows for faster development approvals in Ontario, including changes to environmental protections and the definition of habitats for endangered species. Critics argue that the legislation undermines environmental safeguards and Indigenous rights, as it grants cabinet new powers to designate special economic zones without public consultation.\nThe article highlights concerns from First Nations leaders and environmental groups about the potential impacts of expedited development on land, water, and communities. Legal challenges are already underway, questioning the constitutionality of the legislation and its effects on environmental protections.",
+  "tags": [
+    "environment",
+    "housing"
+  ],
+  "talking_points": [
+    {
+      "point": "Bill 5 allows for faster development approvals, raising concerns about environmental protections.",
+      "source_reference": "The article states that Bill 5 changes the rules for development and affects environmental assessments."
+    },
+    {
+      "point": "The legislation grants cabinet new powers to designate special economic zones, which critics argue could weaken environmental safeguards.",
+      "source_reference": "The article describes how Bill 5 gives cabinet powers to designate special economic zones."
+    },
+    {
+      "point": "Environmental groups and First Nations are challenging Bill 5 in court, arguing it threatens Indigenous rights and environmental protections.",
+      "source_reference": "The article mentions ongoing legal challenges against Bill 5 from environmental groups and First Nations."
+    },
+    {
+      "point": "The Ford government has proposed changes to the Endangered Species Act through Bill 5, impacting protections for species at risk.",
+      "source_reference": "The article notes that Bill 5 proposes changes to how threatened and endangered species are protected."
+    }
+  ],
+  "suggested_ask": "I'm asking the Premier to clarify how Bill 5 will protect environmental standards while promoting economic growth.",
+  "tone_note": "When calling, remember to be respectful and clear about your concerns.",
+  "levels": [
+    "provincial"
+  ],
+  "hold_for_review": true,
+  "hold_reason": "The article contains opinionated language and framing that makes it difficult to provide a grounded, non-partisan summary without carrying its rhetoric. Specific claims about the implications of Bill 5 and the government's actions are not sufficiently supported by direct quotes or data, making it challenging to create checkable talking points."
+}
+```
+
+</details>
