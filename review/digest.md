@@ -1,0 +1,57 @@
+# OpenLine review digest — 2026-07-16
+
+**0 auto-published · 1 held for review.**
+
+## ⏸ Held for review (1)
+
+Approve with `node pipeline/promote.mjs <instance> <article-id>`, or delete the entry from `instances/<instance>/held.json` to let the pipeline retry it fresh.
+
+### [callchow] ‘Appealing to emotions,’ Political scientist weighs in on Brad Bradford’s crime video after Salsa shooting
+- **Why held:** The article's opinionated framing and the focus on a specific candidate's actions make it difficult to provide a grounded, non-partisan summary without carrying its rhetoric.
+- **Source:** NOW Toronto — https://nowtoronto.com/news/brad-bradford-salsa-shooting-campaign-video-backlash/
+- **Drafted ask:** I'm asking the Mayor to clarify what municipal actions can be taken to address public safety concerns raised in the recent campaign video.
+
+<details><summary>Full drafted output</summary>
+
+```json
+{
+  "id": "2026-07-16-now-toronto-appealing-to-emotions-political-scientist-weighs",
+  "title": "‘Appealing to emotions,’ Political scientist weighs in on Brad Bradford’s crime video after Salsa shooting",
+  "source_name": "NOW Toronto",
+  "source_url": "https://nowtoronto.com/news/brad-bradford-salsa-shooting-campaign-video-backlash/",
+  "published_at": "2026-07-16T11:00:00.000Z",
+  "fetched_at": "2026-07-16T12:24:12.622Z",
+  "summary": "Brad Bradford released a campaign video following a deadly shooting at Salsa on St. Clair, calling for stronger public safety measures, gun enforcement, and bail reform. The video has sparked debate, with some praising his focus on crime while others criticize it as fearmongering and beyond municipal authority.\nPolitical scientist Dr. Nelson Wiseman argues that Bradford's proposals are not practical municipal solutions, noting that issues like bail reform fall under federal jurisdiction. Wiseman emphasizes that the rise in gun violence is linked to illegal firearms entering Canada, a problem that extends beyond municipal politics.",
+  "tags": [
+    "police budget"
+  ],
+  "talking_points": [
+    {
+      "point": "Bradford's video calls for stronger public safety measures and gun enforcement in response to recent shootings.",
+      "source_reference": "The article states Bradford's campaign video addresses public safety measures after the Salsa shooting."
+    },
+    {
+      "point": "Dr. Wiseman argues that Bradford's proposals do not offer practical municipal solutions to crime.",
+      "source_reference": "The article quotes Dr. Wiseman stating that Bradford's proposals are not practical municipal solutions."
+    },
+    {
+      "point": "The rise in gun violence is attributed to illegal firearms entering Canada, which is beyond municipal control.",
+      "source_reference": "The article cites Dr. Wiseman's comments on illegal firearms contributing to gun violence."
+    },
+    {
+      "point": "Critics of Bradford's video argue that many of his proposals are outside the city's jurisdiction.",
+      "source_reference": "The article includes comments from critics stating that Bradford's proposals are beyond municipal authority."
+    }
+  ],
+  "suggested_ask": "I'm asking the Mayor to clarify what municipal actions can be taken to address public safety concerns raised in the recent campaign video.",
+  "tone_note": "Remember to be respectful when discussing these sensitive topics with staff.",
+  "levels": [
+    "municipal",
+    "provincial"
+  ],
+  "hold_for_review": true,
+  "hold_reason": "The article's opinionated framing and the focus on a specific candidate's actions make it difficult to provide a grounded, non-partisan summary without carrying its rhetoric."
+}
+```
+
+</details>
