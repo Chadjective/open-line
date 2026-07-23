@@ -1,7 +1,79 @@
 {
   "instance_id": "callchow",
-  "last_updated": "2026-06-09T14:00:00Z",
+  "last_updated": "2026-07-23T12:28:09.404Z",
   "articles": [
+    {
+      "id": "2026-07-22-now-toronto-too-many-eyes-toronto-residents-raise-privacy-co",
+      "title": "‘Too many eyes’: Toronto residents raise privacy concerns as Chow eyes surveillance pricing ban",
+      "source_name": "NOW Toronto",
+      "source_url": "https://nowtoronto.com/news/toronto-residents-raise-privacy-concerns-as-chow-eyes-surveillance-pricing-ban/",
+      "published_at": "2026-07-22T22:30:00.000Z",
+      "fetched_at": "2026-07-23T12:27:37.047Z",
+      "summary": "Mayor Olivia Chow has introduced a motion to explore banning surveillance pricing, which uses personal data to set prices, following similar actions in Manitoba and New York City. Residents have expressed concerns about privacy and the fairness of charging different prices for the same products, with some advocating for government regulation and consumer consent before data collection.\nThe motion calls for city staff to identify ways to regulate or ban the practice, with recommendations expected to be reviewed by councillors next year. The Mayor highlighted that surveillance pricing can be predatory, particularly affecting those struggling with rising living costs, and emphasized the need for local government action on this issue.",
+      "tags": [
+        "transit"
+      ],
+      "talking_points": [
+        {
+          "point": "The Mayor's motion asks city staff to explore banning or regulating surveillance pricing, which uses personal data to tailor prices.",
+          "source_reference": "The article states the Mayor introduced a motion to explore banning surveillance pricing."
+        },
+        {
+          "point": "Residents have raised concerns about privacy and the fairness of different pricing based on personal data.",
+          "source_reference": "The article reports residents expressing concerns about privacy and consent regarding surveillance pricing."
+        },
+        {
+          "point": "Chow noted that surveillance pricing can be predatory towards consumers already facing rising living costs.",
+          "source_reference": "The article quotes the Mayor describing the technology as predatory."
+        },
+        {
+          "point": "Recommendations from city staff on this issue are expected to be considered by councillors next year.",
+          "source_reference": "The article mentions that recommendations will be reviewed by councillors next year."
+        }
+      ],
+      "suggested_ask": "I'm asking the Mayor to provide a timeline for when recommendations on surveillance pricing will be available for council consideration.",
+      "tone_note": "Remember to be respectful when discussing your concerns with staff.",
+      "levels": [
+        "municipal",
+        "provincial"
+      ]
+    },
+    {
+      "id": "2026-07-22-now-toronto-surveillance-pricing-completely-erodes-a-free-ma",
+      "title": "‘Surveillance pricing completely erodes a free market’: Expert weighs in on Olivia Chow’s push to protect Toronto shoppers",
+      "source_name": "NOW Toronto",
+      "source_url": "https://nowtoronto.com/news/olivia-chow-toronto-surveillance-pricing-ban-expert-reaction/",
+      "published_at": "2026-07-22T20:15:00.000Z",
+      "fetched_at": "2026-07-23T12:27:44.826Z",
+      "summary": "Mayor Olivia Chow has introduced a motion to explore options for banning or regulating surveillance pricing, with recommendations expected in early 2027. This practice uses personal data to set prices based on what companies believe consumers are willing to pay, raising concerns about affordability, privacy, and transparency.\nThe motion aims to protect residents from what Chow describes as predatory pricing practices, especially as many struggle with rising costs. Other jurisdictions, including Manitoba and New York City, have already taken steps to regulate this practice, highlighting the growing concern over consumer rights and data usage.",
+      "tags": [
+        "transit"
+      ],
+      "talking_points": [
+        {
+          "point": "The Mayor's motion directs staff to explore options for banning or regulating surveillance pricing, with recommendations due in early 2027.",
+          "source_reference": "The article states that Chow introduced a motion for staff to explore options regarding surveillance pricing."
+        },
+        {
+          "point": "Surveillance pricing raises concerns about affordability and privacy, as it uses personal data to set prices based on individual consumer profiles.",
+          "source_reference": "The article discusses expert concerns about the implications of surveillance pricing on affordability and privacy."
+        },
+        {
+          "point": "Chow argues that the city must address these practices to protect residents from rising costs, particularly for essential items like groceries.",
+          "source_reference": "The article quotes Chow emphasizing the need to protect Torontonians from predatory pricing practices."
+        },
+        {
+          "point": "Other jurisdictions, such as Manitoba and New York City, have already implemented legislation to restrict surveillance pricing, indicating a trend towards regulation.",
+          "source_reference": "The article mentions that Manitoba and New York City have introduced legislation to address surveillance pricing."
+        }
+      ],
+      "suggested_ask": "I'm asking the Mayor to provide updates on the timeline for the proposed ban on surveillance pricing and its potential impacts on consumers.",
+      "tone_note": "Remember to be respectful when speaking with staff, as they are there to assist you.",
+      "levels": [
+        "municipal",
+        "provincial"
+      ]
+    },
     {
       "id": "2026-03-30-cp24-toronto-housing-partnership-delivery",
       "title": "Canada–Ontario housing deal leans on Toronto to deliver — what's the city's part?",
@@ -10,47 +82,27 @@
       "published_at": "2026-03-30T17:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "The federal and Ontario governments announced a partnership they say will cut taxes and fees on a new home by up to $200,000 and fund homes, infrastructure, and transit. As Canada's largest housing market, Toronto is where much of that building has to actually happen — through city approvals, zoning, and servicing.\nThat puts a share of the delivery on Mayor Olivia Chow's administration. Citizens can fairly ask what the city has committed to under the deal: how many homes, how fast approvals will move, and how the funding reaches Toronto projects.",
-      "tags": ["housing", "transit"],
+      "tags": [
+        "housing",
+        "transit"
+      ],
       "talking_points": [
-        { "point": "Toronto is the largest delivery jurisdiction for this deal — the city should publish its own targets and approval timelines.", "source_reference": "CP24 reports a Canada–Ontario partnership funding homes, infrastructure, and transit." },
-        { "point": "Residents should know how the up-to-$200,000 in savings and the infrastructure money actually reach Toronto projects.", "source_reference": "CP24 reports the partnership would reduce taxes and fees on a home by up to $200,000." }
+        {
+          "point": "Toronto is the largest delivery jurisdiction for this deal — the city should publish its own targets and approval timelines.",
+          "source_reference": "CP24 reports a Canada–Ontario partnership funding homes, infrastructure, and transit."
+        },
+        {
+          "point": "Residents should know how the up-to-$200,000 in savings and the infrastructure money actually reach Toronto projects.",
+          "source_reference": "CP24 reports the partnership would reduce taxes and fees on a home by up to $200,000."
+        }
       ],
       "suggested_ask": "I'm asking the Mayor to publish Toronto's delivery commitments — homes and approval timelines — under the Canada–Ontario housing partnership.",
       "tone_note": "City Hall staff take these calls. Be brief and respectful.",
-      "levels": ["federal", "provincial", "municipal"]
-    },
-    {
-      "id": "2026-02-10-cbc-budget-2026-approved",
-      "title": "Council approves Chow's 2026 budget with lowest tax hike of her tenure",
-      "source_name": "CBC News",
-      "source_url": "https://www.cbc.ca/news/canada/toronto/council-debate-budget-2026-9.7081563",
-      "published_at": "2026-02-10T20:00:00Z",
-      "fetched_at": "2026-06-09T14:00:00Z",
-      "summary": "Toronto city council approved Mayor Olivia Chow's 2026 budget, which carries a 2.2 per cent residential property tax increase — the lowest of her time in office — and more than $1-billion in combined funding increases for the TTC and Toronto police. The mayor frames the plan around affordability.\nA budget is a set of choices about what gets funded and what doesn't. Holding the mayor's office to account means asking whether the headline tax figure is matched by the service levels residents actually receive.",
-      "tags": ["TTC", "police budget", "housing"],
-      "talking_points": [
-        { "point": "A 2.2 per cent tax increase is the lowest of the mayor's tenure — residents should know whether it fully covers rising service costs.", "source_reference": "CBC reports the budget keeps a 2.2 per cent property tax increase, the lowest during Chow's time in office." },
-        { "point": "More than $1-billion in new funding for the TTC and police is a major commitment that warrants clear outcome measures.", "source_reference": "CBC reports more than $1-billion in combined funding increases for the TTC and Toronto police." }
-      ],
-      "suggested_ask": "I'm asking the Mayor's office to report how the 2026 budget translates into measurable service improvements in my neighbourhood.",
-      "tone_note": "City Hall staff answer this line. Be brief and respectful."
-    },
-    {
-      "id": "2026-02-09-cbc-ttc-fare-freeze-capping",
-      "title": "Chow's budget freezes TTC fares and adds fare capping on a $1.48B subsidy",
-      "source_name": "CBC News",
-      "source_url": "https://www.cbc.ca/news/canada/toronto/toronto-mayors-budget-2026-9.7068896",
-      "published_at": "2026-02-09T15:00:00Z",
-      "fetched_at": "2026-06-09T14:00:00Z",
-      "summary": "Mayor Olivia Chow's 2026 budget freezes TTC fares and introduces fare capping, funded in large part by a $1.48-billion subsidy that the city says fully meets the TTC's funding request. Under fare capping, riders would automatically travel free for the rest of the month after 47 trips, with the program starting in September.\nFare relief is welcome for riders, but constituents can fairly ask whether a fare freeze is sustainable year over year and whether service reliability keeps pace with ridership.",
-      "tags": ["TTC", "transit"],
-      "talking_points": [
-        { "point": "A fare freeze and fare capping help affordability, but riders should know the plan to keep them funded beyond 2026.", "source_reference": "CBC reports the fare freeze and capping are funded by a $1.48-billion subsidy meeting the TTC's request." },
-        { "point": "Fare capping starts in September — riders deserve clarity on how the 47-trip threshold is tracked and applied.", "source_reference": "CBC reports riders ride free for the rest of the month after 47 trips, starting in September." },
-        { "point": "Meeting the TTC's funding request should be paired with reporting on service reliability, not just cost.", "source_reference": "CBC reports the subsidy fully meets the TTC's funding request." }
-      ],
-      "suggested_ask": "I'm asking the Mayor to commit to maintaining the TTC fare freeze and to publish service-reliability targets alongside it.",
-      "tone_note": "Staff relay your message. Keep it civil and concise."
+      "levels": [
+        "federal",
+        "provincial",
+        "municipal"
+      ]
     },
     {
       "id": "2026-02-11-torontotoday-police-budget-increase",
@@ -60,13 +112,47 @@
       "published_at": "2026-02-11T12:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Under Mayor Olivia Chow's approved 2026 budget, the Toronto Police Service receives a $93-million increase, bringing its total funding to $1.43-billion. The service plans to spend $20.5-million to hire 143 new officers — 70 frontline, 40 investigators, 17 recruitment and training staff, and 16 neighbourhood community officers.\nA funding increase of this size invites scrutiny on both sides: whether it delivers measurable improvements in safety and response times, and how it is balanced against other city priorities.",
-      "tags": ["police budget"],
+      "tags": [
+        "police budget"
+      ],
       "talking_points": [
-        { "point": "A $93-million police increase should come with public targets for response times and safety outcomes.", "source_reference": "TorontoToday reports a $93-million increase bringing police funding to $1.43-billion." },
-        { "point": "Residents should know how 143 new hires are distributed and what results are expected.", "source_reference": "TorontoToday reports plans to hire 143 new officers, including 70 frontline and 16 neighbourhood community officers." }
+        {
+          "point": "A $93-million police increase should come with public targets for response times and safety outcomes.",
+          "source_reference": "TorontoToday reports a $93-million increase bringing police funding to $1.43-billion."
+        },
+        {
+          "point": "Residents should know how 143 new hires are distributed and what results are expected.",
+          "source_reference": "TorontoToday reports plans to hire 143 new officers, including 70 frontline and 16 neighbourhood community officers."
+        }
       ],
       "suggested_ask": "I'm asking the Mayor's office to publish the safety outcomes expected from the 2026 police funding increase.",
       "tone_note": "You're speaking with staff. Be respectful and to the point."
+    },
+    {
+      "id": "2026-02-10-cbc-budget-2026-approved",
+      "title": "Council approves Chow's 2026 budget with lowest tax hike of her tenure",
+      "source_name": "CBC News",
+      "source_url": "https://www.cbc.ca/news/canada/toronto/council-debate-budget-2026-9.7081563",
+      "published_at": "2026-02-10T20:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Toronto city council approved Mayor Olivia Chow's 2026 budget, which carries a 2.2 per cent residential property tax increase — the lowest of her time in office — and more than $1-billion in combined funding increases for the TTC and Toronto police. The mayor frames the plan around affordability.\nA budget is a set of choices about what gets funded and what doesn't. Holding the mayor's office to account means asking whether the headline tax figure is matched by the service levels residents actually receive.",
+      "tags": [
+        "TTC",
+        "police budget",
+        "housing"
+      ],
+      "talking_points": [
+        {
+          "point": "A 2.2 per cent tax increase is the lowest of the mayor's tenure — residents should know whether it fully covers rising service costs.",
+          "source_reference": "CBC reports the budget keeps a 2.2 per cent property tax increase, the lowest during Chow's time in office."
+        },
+        {
+          "point": "More than $1-billion in new funding for the TTC and police is a major commitment that warrants clear outcome measures.",
+          "source_reference": "CBC reports more than $1-billion in combined funding increases for the TTC and Toronto police."
+        }
+      ],
+      "suggested_ask": "I'm asking the Mayor's office to report how the 2026 budget translates into measurable service improvements in my neighbourhood.",
+      "tone_note": "City Hall staff answer this line. Be brief and respectful."
     },
     {
       "id": "2026-02-10-cbc-parks-capital-cut",
@@ -76,13 +162,98 @@
       "published_at": "2026-02-10T18:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Capital plans for Toronto's Parks and Recreation Division were cut by $214-million in the 2026 budget. At the same time, the city made park permits free for local community groups, expanded free youth programs and camps, and increased support for free street festivals.\nThe mix of expanded free programming and reduced capital investment is worth examining: programming matters, but deferred capital can mean aging facilities and longer-term costs.",
-      "tags": ["parks"],
+      "tags": [
+        "parks"
+      ],
       "talking_points": [
-        { "point": "Cutting $214-million from parks capital plans risks deferring maintenance on aging facilities.", "source_reference": "CBC reports Parks and Recreation capital plans were cut by $214-million in the 2026 budget." },
-        { "point": "Free permits and programs are positive, but residents should know which capital projects were delayed.", "source_reference": "CBC notes free community park permits and expanded free programming alongside the capital cut." }
+        {
+          "point": "Cutting $214-million from parks capital plans risks deferring maintenance on aging facilities.",
+          "source_reference": "CBC reports Parks and Recreation capital plans were cut by $214-million in the 2026 budget."
+        },
+        {
+          "point": "Free permits and programs are positive, but residents should know which capital projects were delayed.",
+          "source_reference": "CBC notes free community park permits and expanded free programming alongside the capital cut."
+        }
       ],
       "suggested_ask": "I'm asking the Mayor to publish which parks capital projects were deferred by the 2026 budget and when they'll proceed.",
       "tone_note": "Staff take the call. Keep it factual and respectful."
+    },
+    {
+      "id": "2026-02-09-cbc-ttc-fare-freeze-capping",
+      "title": "Chow's budget freezes TTC fares and adds fare capping on a $1.48B subsidy",
+      "source_name": "CBC News",
+      "source_url": "https://www.cbc.ca/news/canada/toronto/toronto-mayors-budget-2026-9.7068896",
+      "published_at": "2026-02-09T15:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Mayor Olivia Chow's 2026 budget freezes TTC fares and introduces fare capping, funded in large part by a $1.48-billion subsidy that the city says fully meets the TTC's funding request. Under fare capping, riders would automatically travel free for the rest of the month after 47 trips, with the program starting in September.\nFare relief is welcome for riders, but constituents can fairly ask whether a fare freeze is sustainable year over year and whether service reliability keeps pace with ridership.",
+      "tags": [
+        "TTC",
+        "transit"
+      ],
+      "talking_points": [
+        {
+          "point": "A fare freeze and fare capping help affordability, but riders should know the plan to keep them funded beyond 2026.",
+          "source_reference": "CBC reports the fare freeze and capping are funded by a $1.48-billion subsidy meeting the TTC's request."
+        },
+        {
+          "point": "Fare capping starts in September — riders deserve clarity on how the 47-trip threshold is tracked and applied.",
+          "source_reference": "CBC reports riders ride free for the rest of the month after 47 trips, starting in September."
+        },
+        {
+          "point": "Meeting the TTC's funding request should be paired with reporting on service reliability, not just cost.",
+          "source_reference": "CBC reports the subsidy fully meets the TTC's funding request."
+        }
+      ],
+      "suggested_ask": "I'm asking the Mayor to commit to maintaining the TTC fare freeze and to publish service-reliability targets alongside it.",
+      "tone_note": "Staff relay your message. Keep it civil and concise."
+    },
+    {
+      "id": "2026-02-08-nowtoronto-housing-social-support-added",
+      "title": "Public feedback adds $500K for housing and social support to Chow's budget",
+      "source_name": "NOW Toronto",
+      "source_url": "https://nowtoronto.com/news/inside-mayor-chows-2026-budget-fare-freezes-tax-relief-and-higher-costs-for-luxury-homes/",
+      "published_at": "2026-02-08T13:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Feedback from residents at committee meetings prompted Mayor Olivia Chow to add half a million dollars for housing and social-support services to the 2026 budget, which also includes a fare freeze, tax relief, and higher costs for luxury homes.\nThe late addition shows public input can move the budget — which is also a reason to ask whether $500,000 is enough to meet the housing and social-support needs residents raised.",
+      "tags": [
+        "housing"
+      ],
+      "talking_points": [
+        {
+          "point": "Public feedback added $500,000 for housing and social support — residents should know if that matches the need they raised.",
+          "source_reference": "NOW Toronto reports public feedback prompted half a million dollars for housing and social support."
+        },
+        {
+          "point": "If resident input can change the budget, the city should make that consultation process clearer and earlier.",
+          "source_reference": "NOW Toronto notes the funding was added after feedback at committee meetings."
+        }
+      ],
+      "suggested_ask": "I'm asking the Mayor to expand housing and social-support funding to match the needs raised in public consultation.",
+      "tone_note": "City Hall staff take these calls. Keep it respectful and brief."
+    },
+    {
+      "id": "2026-01-28-cbc-federal-housing-fund-cut",
+      "title": "Ottawa cuts Toronto housing-fund money; what is the city doing about it?",
+      "source_name": "CBC News",
+      "source_url": "https://www.cbc.ca/news/canada/toronto/federal-housing-minister-gregor-robertson-toronto-mayor-olivia-chow-housing-fund-cut-9.7054038",
+      "published_at": "2026-01-28T16:00:00Z",
+      "fetched_at": "2026-06-09T14:00:00Z",
+      "summary": "Canada's housing minister defended a decision to cut housing-fund money for Toronto, a reduction that affects the city's ability to accelerate new housing. The dispute puts Mayor Olivia Chow's office in the position of responding to a federal funding shortfall.\nWhen funding is cut from another order of government, residents still need to know what their own city will do: how Toronto will backfill, reprioritize, or press for the money's return.",
+      "tags": [
+        "housing"
+      ],
+      "talking_points": [
+        {
+          "point": "A federal housing-fund cut affects Toronto's housing targets — residents should know the city's response plan.",
+          "source_reference": "CBC reports the federal housing minister defended cutting housing-fund money for Toronto."
+        },
+        {
+          "point": "The Mayor's office should be clear on whether it will backfill the shortfall or press Ottawa to restore it.",
+          "source_reference": "CBC frames the story around the funding cut affecting Toronto and the mayor."
+        }
+      ],
+      "suggested_ask": "I'm asking the Mayor to set out how Toronto will protect its housing targets after the federal fund cut.",
+      "tone_note": "Be respectful — staff relay the message, not the Mayor."
     },
     {
       "id": "2026-01-20-nowtoronto-bike-lanes-pushback",
@@ -92,10 +263,19 @@
       "published_at": "2026-01-20T14:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Mayor Olivia Chow has pushed back against the provincial government's plans to restrict bike-lane infrastructure and remove speed cameras, defending the city's authority over its own streets. Toronto council approved additional bike lanes in December 2025.\nJurisdiction over local streets is a live accountability question between the city and the province. Residents can ask the mayor's office how the city will protect cycling infrastructure and road-safety measures.",
-      "tags": ["bike lanes", "transit"],
+      "tags": [
+        "bike lanes",
+        "transit"
+      ],
       "talking_points": [
-        { "point": "The city should be clear on how it will defend bike lanes and speed cameras against provincial restrictions.", "source_reference": "NOW Toronto reports Chow pushed back on the province's plans to restrict bike lanes and remove speed cameras." },
-        { "point": "Council approved more bike lanes in December 2025 — residents should know the plan to build and protect them.", "source_reference": "NOW Toronto notes council approved more bike lanes in December 2025." }
+        {
+          "point": "The city should be clear on how it will defend bike lanes and speed cameras against provincial restrictions.",
+          "source_reference": "NOW Toronto reports Chow pushed back on the province's plans to restrict bike lanes and remove speed cameras."
+        },
+        {
+          "point": "Council approved more bike lanes in December 2025 — residents should know the plan to build and protect them.",
+          "source_reference": "NOW Toronto notes council approved more bike lanes in December 2025."
+        }
       ],
       "suggested_ask": "I'm asking the Mayor to commit to protecting and expanding Toronto's bike-lane network and speed cameras.",
       "tone_note": "Be respectful with the staff who take your message."
@@ -108,45 +288,22 @@
       "published_at": "2026-01-15T11:00:00Z",
       "fetched_at": "2026-06-09T14:00:00Z",
       "summary": "Mayor Olivia Chow has argued that construction, not bike lanes, is the main cause of Toronto's traffic congestion, countering provincial claims used to justify restricting cycling infrastructure. The position frames congestion as a coordination-and-construction problem rather than a cycling one.\nThe claim is testable. Residents can ask the city to back it with data on construction-related lane closures and a plan to better coordinate roadwork.",
-      "tags": ["bike lanes", "transit"],
+      "tags": [
+        "bike lanes",
+        "transit"
+      ],
       "talking_points": [
-        { "point": "If construction is the main congestion driver, the city should publish data and a coordination plan.", "source_reference": "Canadian Cycling Magazine reports Chow's position that construction, not bike lanes, is creating congestion." },
-        { "point": "Better coordination of roadwork and lane closures could reduce congestion without cutting bike lanes.", "source_reference": "The article frames congestion as a construction-coordination issue rather than a cycling one." }
+        {
+          "point": "If construction is the main congestion driver, the city should publish data and a coordination plan.",
+          "source_reference": "Canadian Cycling Magazine reports Chow's position that construction, not bike lanes, is creating congestion."
+        },
+        {
+          "point": "Better coordination of roadwork and lane closures could reduce congestion without cutting bike lanes.",
+          "source_reference": "The article frames congestion as a construction-coordination issue rather than a cycling one."
+        }
       ],
       "suggested_ask": "I'm asking the Mayor to release data on construction-related congestion and a plan to coordinate roadwork.",
       "tone_note": "Staff answer this line. Be direct and respectful."
-    },
-    {
-      "id": "2026-01-28-cbc-federal-housing-fund-cut",
-      "title": "Ottawa cuts Toronto housing-fund money; what is the city doing about it?",
-      "source_name": "CBC News",
-      "source_url": "https://www.cbc.ca/news/canada/toronto/federal-housing-minister-gregor-robertson-toronto-mayor-olivia-chow-housing-fund-cut-9.7054038",
-      "published_at": "2026-01-28T16:00:00Z",
-      "fetched_at": "2026-06-09T14:00:00Z",
-      "summary": "Canada's housing minister defended a decision to cut housing-fund money for Toronto, a reduction that affects the city's ability to accelerate new housing. The dispute puts Mayor Olivia Chow's office in the position of responding to a federal funding shortfall.\nWhen funding is cut from another order of government, residents still need to know what their own city will do: how Toronto will backfill, reprioritize, or press for the money's return.",
-      "tags": ["housing"],
-      "talking_points": [
-        { "point": "A federal housing-fund cut affects Toronto's housing targets — residents should know the city's response plan.", "source_reference": "CBC reports the federal housing minister defended cutting housing-fund money for Toronto." },
-        { "point": "The Mayor's office should be clear on whether it will backfill the shortfall or press Ottawa to restore it.", "source_reference": "CBC frames the story around the funding cut affecting Toronto and the mayor." }
-      ],
-      "suggested_ask": "I'm asking the Mayor to set out how Toronto will protect its housing targets after the federal fund cut.",
-      "tone_note": "Be respectful — staff relay the message, not the Mayor."
-    },
-    {
-      "id": "2026-02-08-nowtoronto-housing-social-support-added",
-      "title": "Public feedback adds $500K for housing and social support to Chow's budget",
-      "source_name": "NOW Toronto",
-      "source_url": "https://nowtoronto.com/news/inside-mayor-chows-2026-budget-fare-freezes-tax-relief-and-higher-costs-for-luxury-homes/",
-      "published_at": "2026-02-08T13:00:00Z",
-      "fetched_at": "2026-06-09T14:00:00Z",
-      "summary": "Feedback from residents at committee meetings prompted Mayor Olivia Chow to add half a million dollars for housing and social-support services to the 2026 budget, which also includes a fare freeze, tax relief, and higher costs for luxury homes.\nThe late addition shows public input can move the budget — which is also a reason to ask whether $500,000 is enough to meet the housing and social-support needs residents raised.",
-      "tags": ["housing"],
-      "talking_points": [
-        { "point": "Public feedback added $500,000 for housing and social support — residents should know if that matches the need they raised.", "source_reference": "NOW Toronto reports public feedback prompted half a million dollars for housing and social support." },
-        { "point": "If resident input can change the budget, the city should make that consultation process clearer and earlier.", "source_reference": "NOW Toronto notes the funding was added after feedback at committee meetings." }
-      ],
-      "suggested_ask": "I'm asking the Mayor to expand housing and social-support funding to match the needs raised in public consultation.",
-      "tone_note": "City Hall staff take these calls. Keep it respectful and brief."
     }
   ]
 }

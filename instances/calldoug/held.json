@@ -2,6 +2,84 @@
   "instance_id": "calldoug",
   "articles": [
     {
+      "id": "2026-07-22-ricochet-q-a-fighting-wildfires-and-doug-ford-with-ndp-le",
+      "title": "Q&A: Fighting wildfires, and Doug Ford, with NDP leader Marit Stiles",
+      "source_name": "Ricochet",
+      "source_url": "https://ricochet.media/indigenous/qa-fighting-wildfires-and-doug-ford-with-ndp-leader-marit-stiles/",
+      "published_at": "2026-07-22T20:41:22.000Z",
+      "fetched_at": "2026-07-23T12:27:55.029Z",
+      "summary": "Wildfires are currently affecting northern Ontario, and there is significant criticism of the provincial government's response, particularly regarding communication with First Nations leaders and preparedness for the fires. First Nations leaders have expressed feelings of abandonment by the Ford government, while the firefighters' union has criticized the government's lack of preparation for these predictable events.\nNDP leader Marit Stiles has called for a public inquiry into the government's actions and has highlighted the need for increased investment in wildfire prevention. She also criticized the government's claims about firefighting resources, stating that the number of operational water bombers is misrepresented.",
+      "tags": [
+        "environment"
+      ],
+      "talking_points": [
+        {
+          "point": "First Nations leaders have criticized the Ford government for failing to communicate effectively during the wildfire crisis.",
+          "source_reference": "The article mentions criticism from First Nations leaders about being abandoned by the Ford government."
+        },
+        {
+          "point": "The firefighters' union has stated that the government's lack of preparation has hindered firefighting efforts.",
+          "source_reference": "The article reports on criticism from the firefighters' union regarding the government's failure to prepare."
+        },
+        {
+          "point": "Marit Stiles has called for a public inquiry into the government's response to the wildfires.",
+          "source_reference": "The article quotes Stiles calling for a public inquiry after hearing from First Nations leaders."
+        },
+        {
+          "point": "Stiles claims that the government has misrepresented the number of operational water bombers available for firefighting.",
+          "source_reference": "The article states that Stiles accused the Ford government of misleading the public about firefighting resources."
+        }
+      ],
+      "suggested_ask": "Request a public inquiry into the government's response to the wildfires and its communication with affected communities.",
+      "tone_note": "When calling, remember to be respectful and clear about your concerns.",
+      "levels": [
+        "provincial",
+        "federal"
+      ],
+      "hold_for_review": true,
+      "hold_reason": "The article contains opinionated language and framing that attributes conduct to party or character rather than describing the conduct. This makes it difficult to create a grounded, non-partisan summary without carrying its rhetoric.",
+      "held_at": "2026-07-23T12:28:09.405Z"
+    },
+    {
+      "id": "2026-07-22-now-toronto-surveillance-pricing-completely-erodes-a-free-ma",
+      "title": "‘Surveillance pricing completely erodes a free market’: Expert weighs in on Olivia Chow’s push to protect Toronto shoppers",
+      "source_name": "NOW Toronto",
+      "source_url": "https://nowtoronto.com/news/olivia-chow-toronto-surveillance-pricing-ban-expert-reaction/",
+      "published_at": "2026-07-22T20:15:00.000Z",
+      "fetched_at": "2026-07-23T12:28:09.404Z",
+      "summary": "Toronto Mayor Olivia Chow has introduced a motion to explore options for banning or regulating surveillance pricing, which personalizes prices based on consumer data. This practice raises concerns about affordability, privacy, and transparency, particularly as it may exploit consumers already facing rising costs.\nThe motion directs city staff to provide recommendations by early 2027, but similar efforts at the provincial level have faced challenges, as seen with the Ontario NDP Leader's earlier motion that was voted down. Other jurisdictions, like Manitoba and New York City, have already taken steps to restrict surveillance pricing, highlighting a growing movement for consumer protection.",
+      "tags": [
+        "affordability"
+      ],
+      "talking_points": [
+        {
+          "point": "Mayor Chow's motion aims to address surveillance pricing, which uses personal data to set prices, potentially harming consumers.",
+          "source_reference": "The article states that Chow's motion directs staff to explore options to ban or regulate surveillance pricing."
+        },
+        {
+          "point": "Surveillance pricing raises concerns about consumer transparency and could exploit individuals struggling with rising costs.",
+          "source_reference": "The article mentions that the practice can take advantage of Torontonians facing rising costs."
+        },
+        {
+          "point": "Previous attempts to ban surveillance pricing at the provincial level have been unsuccessful, as seen with Marit Stiles' motion.",
+          "source_reference": "The article notes that Stiles' motion to ban surveillance pricing was voted down earlier this year."
+        },
+        {
+          "point": "Other jurisdictions, like Manitoba and New York City, have enacted legislation to restrict surveillance pricing practices.",
+          "source_reference": "The article cites that Manitoba and New York City have introduced legislation against surveillance pricing."
+        }
+      ],
+      "suggested_ask": "I'm asking the Premier to support the regulation of surveillance pricing practices in Ontario.",
+      "tone_note": "When calling, remember to be respectful and clear about your concerns.",
+      "levels": [
+        "provincial",
+        "municipal"
+      ],
+      "hold_for_review": true,
+      "hold_reason": "Some talking points reference actions or implications that are not directly supported by the article text, and the suggested ask may overreach the jurisdiction of the Premier's office.",
+      "held_at": "2026-07-23T12:28:09.405Z"
+    },
+    {
       "id": "2026-07-21-ricochet-union-blasts-ford-government-for-mismanagement-o",
       "title": "Union blasts Ford government for ‘mismanagement’ of forest firefighting efforts",
       "source_name": "Ricochet",

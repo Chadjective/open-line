@@ -1,7 +1,42 @@
 {
   "instance_id": "calldoug",
-  "last_updated": "2026-07-06T15:30:55.590Z",
+  "last_updated": "2026-07-23T12:28:09.405Z",
   "articles": [
+    {
+      "id": "2026-07-22-now-toronto-too-many-eyes-toronto-residents-raise-privacy-co",
+      "title": "‘Too many eyes’: Toronto residents raise privacy concerns as Chow eyes surveillance pricing ban",
+      "source_name": "NOW Toronto",
+      "source_url": "https://nowtoronto.com/news/toronto-residents-raise-privacy-concerns-as-chow-eyes-surveillance-pricing-ban/",
+      "published_at": "2026-07-22T22:30:00.000Z",
+      "fetched_at": "2026-07-23T12:28:01.108Z",
+      "summary": "Toronto residents are reacting to Mayor Olivia Chow's motion to explore banning surveillance pricing, which personalizes prices based on consumer data. The motion aims to address privacy concerns and the potential for price discrimination, particularly affecting essential items like groceries.\nThe proposal follows similar actions in other jurisdictions, with residents expressing mixed opinions on the practice. Some support regulation, while others are concerned about privacy violations and the need for consumer consent before data collection.",
+      "tags": [
+        "affordability"
+      ],
+      "talking_points": [
+        {
+          "point": "Mayor Chow's motion seeks to explore banning surveillance pricing due to privacy concerns raised by residents.",
+          "source_reference": "The article states that Chow introduced a motion to explore banning surveillance pricing."
+        },
+        {
+          "point": "Residents have described surveillance pricing as a form of price gouging and have called for government regulation.",
+          "source_reference": "The article quotes residents expressing concerns about surveillance pricing and suggesting government regulation."
+        },
+        {
+          "point": "The motion will lead to recommendations from city staff that will be considered by councillors next year.",
+          "source_reference": "The article mentions that recommendations from city staff are expected to be considered by councillors next year."
+        },
+        {
+          "point": "Other jurisdictions, like Manitoba and New York City, have already taken steps to ban surveillance pricing.",
+          "source_reference": "The article notes that Manitoba and New York City have passed legislation to ban surveillance pricing."
+        }
+      ],
+      "suggested_ask": "I'm asking the Mayor to prioritize public consultation on the proposed ban of surveillance pricing.",
+      "tone_note": "When calling, remember to be respectful and clear about your concerns.",
+      "levels": [
+        "municipal"
+      ]
+    },
     {
       "id": "2026-06-29-the-narwhal-students-fight-to-recycle-in-a-northern-ontario-",
       "title": "Students fight to recycle in a northern Ontario First Nation",
