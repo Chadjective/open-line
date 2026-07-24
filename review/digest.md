@@ -1,163 +1,113 @@
-# OpenLine review digest — 2026-07-23
+# OpenLine review digest — 2026-07-24
 
-**3 auto-published · 3 held for review.**
+**1 auto-published · 2 held for review.**
 
-## ⏸ Held for review (3)
+## ⏸ Held for review (2)
 
 Approve with `node pipeline/promote.mjs <instance> <article-id>`, or delete the entry from `instances/<instance>/held.json` to let the pipeline retry it fresh.
 
-### [callcarney] Canada’s promises to capture carbon span almost 20 years, with little gains
-- **Why held:** The article contains opinionated language and framing that makes it difficult to provide a grounded, non-partisan summary without carrying its rhetoric.
-- **Source:** The Narwhal — https://thenarwhal.ca/canada-carbon-capture-history/?utm_source=rss
-- **Drafted ask:** I'm asking the Prime Minister's office to provide a clear plan for improving carbon capture technology and meeting emissions reduction targets.
+### [callcarney] First Nations had a wildfire plan. Ontario ignored it. Then came the flames
+- **Why held:** Some talking points are not directly checkable against the article text, and the suggested ask overreaches what the article's facts support.
+- **Source:** The Narwhal — https://thenarwhal.ca/ontario-ignored-first-nations-wildfire-plan/?utm_source=rss
+- **Drafted ask:** I'm asking for a public inquiry into the provincial government's emergency response to the wildfire crisis affecting First Nations communities.
 
 <details><summary>Full drafted output</summary>
 
 ```json
 {
-  "id": "2026-07-21-the-narwhal-canada-s-promises-to-capture-carbon-span-almost-",
-  "title": "Canada’s promises to capture carbon span almost 20 years, with little gains",
+  "id": "2026-07-23-the-narwhal-first-nations-had-a-wildfire-plan-ontario-ignore",
+  "title": "First Nations had a wildfire plan. Ontario ignored it. Then came the flames",
   "source_name": "The Narwhal",
-  "source_url": "https://thenarwhal.ca/canada-carbon-capture-history/?utm_source=rss",
-  "published_at": "2026-07-21T16:17:49.000Z",
-  "fetched_at": "2026-07-23T12:27:31.098Z",
-  "summary": "Over the past two decades, Canadian governments have made numerous promises regarding carbon capture technology, yet only 68.7 million tonnes of carbon dioxide have been captured from 2000 to 2024, far below earlier projections of 600 million tonnes annually. Despite claims that carbon capture could significantly reduce emissions, oilsands carbon pollution has more than doubled during this period, raising concerns about the effectiveness of current policies and technologies.\nThe lack of progress in carbon capture raises questions about accountability and the impact of fossil fuel reliance on climate change. As emissions continue to rise, Canadians face increasing risks from climate-related disasters and health issues, highlighting the urgency for effective action and transparency in government commitments.",
+  "source_url": "https://thenarwhal.ca/ontario-ignored-first-nations-wildfire-plan/?utm_source=rss",
+  "published_at": "2026-07-23T12:42:35.000Z",
+  "fetched_at": "2026-07-24T12:24:01.769Z",
+  "summary": "Wildfires in northern Ontario have devastated First Nations communities, with two completely burned down and many others under evacuation orders. First Nations leaders criticize the provincial government's slow response and jurisdictional issues that hinder access to emergency resources, calling for resignations of senior officials and a public inquiry into the government's actions.\nIn 2021, an emergency plan was presented to the Ontario government, outlining deficiencies in emergency management for First Nations, but there has been no response. The current wildfire season is reported as the worst on record, with over 170 active fires and inadequate government support for affected communities.",
   "tags": [
     "climate"
   ],
   "talking_points": [
     {
-      "point": "Only 68.7 million tonnes of carbon dioxide have been captured in Canada from 2000 to 2024, despite earlier promises of capturing 600 million tonnes annually.",
-      "source_reference": "The article states that only 68.7 million tonnes were captured, contrasting with the 600 million tonnes projection."
+      "point": "Two First Nations communities have completely burned down due to wildfires, highlighting the urgent need for effective emergency management.",
+      "source_reference": "The article states that Collins and Whitewater Lake First Nations have entirely burned down."
     },
     {
-      "point": "Oilsands carbon pollution has more than doubled from 2007 to 2024, reaching 92 million tonnes, while carbon capture has stagnated.",
-      "source_reference": "The article notes that oilsands emissions more than doubled during this time."
+      "point": "First Nations leaders claim the provincial government was too slow to respond to the wildfire risks facing their communities.",
+      "source_reference": "The article mentions leaders criticizing the government's slow identification of risks."
     },
     {
-      "point": "The cumulative amount of carbon captured is less than one year's worth of emissions from the Alberta oilsands, raising concerns about the effectiveness of carbon capture technology.",
-      "source_reference": "The article indicates that the total captured is less than the annual emissions from the oilsands."
+      "point": "An emergency plan presented to the Ontario government in 2021 has not received a response, despite outlining critical deficiencies in emergency management.",
+      "source_reference": "The article notes that Grand Chief Alvin Fiddler presented an 82-page plan in 2021 with no response."
     },
     {
-      "point": "The article highlights that both Liberal and Conservative governments have failed to deliver on carbon capture promises over nearly two decades.",
-      "source_reference": "The article mentions that both parties have made claims about carbon capture without significant results."
+      "point": "The current wildfire season has seen over 170 active fires, with many First Nations communities lacking timely government support for evacuations.",
+      "source_reference": "The article reports more than 170 active wildfires and issues with evacuation support."
+    },
+    {
+      "point": "Several First Nations chiefs are calling for a public inquiry into the provincial government's emergency response to the wildfires.",
+      "source_reference": "The article states that chiefs are asking for a public inquiry into the government's response."
     }
   ],
-  "suggested_ask": "I'm asking the Prime Minister's office to provide a clear plan for improving carbon capture technology and meeting emissions reduction targets.",
-  "tone_note": "Remember to be respectful when calling the office, as staff are there to assist.",
+  "suggested_ask": "I'm asking for a public inquiry into the provincial government's emergency response to the wildfire crisis affecting First Nations communities.",
+  "tone_note": "Remember to be respectful when calling the office, as staff will be answering.",
   "levels": [
-    "federal",
     "provincial"
   ],
   "hold_for_review": true,
-  "hold_reason": "The article contains opinionated language and framing that makes it difficult to provide a grounded, non-partisan summary without carrying its rhetoric."
+  "hold_reason": "Some talking points are not directly checkable against the article text, and the suggested ask overreaches what the article's facts support."
 }
 ```
 
 </details>
 
-### [calldoug] Q&A: Fighting wildfires, and Doug Ford, with NDP leader Marit Stiles
-- **Why held:** The article contains opinionated language and framing that attributes conduct to party or character rather than describing the conduct. This makes it difficult to create a grounded, non-partisan summary without carrying its rhetoric.
-- **Source:** Ricochet — https://ricochet.media/indigenous/qa-fighting-wildfires-and-doug-ford-with-ndp-leader-marit-stiles/
-- **Drafted ask:** Request a public inquiry into the government's response to the wildfires and its communication with affected communities.
+### [calldoug] Doug Ford left First Nations in Ontario to burn
+- **Why held:** The article contains opinionated language and framing that attributes conduct to party and character rather than focusing solely on the actions and their implications. This makes it difficult to provide a grounded, non-partisan summary without carrying the article's rhetoric.
+- **Source:** Ricochet — https://ricochet.media/indigenous/doug-ford-left-first-nations-in-ontario-to-burn/
+- **Drafted ask:** I'm asking the Premier to commit to a review of the emergency wildfire response funding and evacuation protocols for First Nations communities.
 
 <details><summary>Full drafted output</summary>
 
 ```json
 {
-  "id": "2026-07-22-ricochet-q-a-fighting-wildfires-and-doug-ford-with-ndp-le",
-  "title": "Q&A: Fighting wildfires, and Doug Ford, with NDP leader Marit Stiles",
+  "id": "2026-07-23-ricochet-doug-ford-left-first-nations-in-ontario-to-burn",
+  "title": "Doug Ford left First Nations in Ontario to burn",
   "source_name": "Ricochet",
-  "source_url": "https://ricochet.media/indigenous/qa-fighting-wildfires-and-doug-ford-with-ndp-leader-marit-stiles/",
-  "published_at": "2026-07-22T20:41:22.000Z",
-  "fetched_at": "2026-07-23T12:27:55.029Z",
-  "summary": "Wildfires are currently affecting northern Ontario, and there is significant criticism of the provincial government's response, particularly regarding communication with First Nations leaders and preparedness for the fires. First Nations leaders have expressed feelings of abandonment by the Ford government, while the firefighters' union has criticized the government's lack of preparation for these predictable events.\nNDP leader Marit Stiles has called for a public inquiry into the government's actions and has highlighted the need for increased investment in wildfire prevention. She also criticized the government's claims about firefighting resources, stating that the number of operational water bombers is misrepresented.",
+  "source_url": "https://ricochet.media/indigenous/doug-ford-left-first-nations-in-ontario-to-burn/",
+  "published_at": "2026-07-23T18:15:43.000Z",
+  "fetched_at": "2026-07-24T12:23:54.681Z",
+  "summary": "Wildfires have forced many First Nations in Ontario to evacuate without warning or assistance from the provincial government, leading to significant destruction of their communities. Critics blame Premier Doug Ford for underfunding the emergency wildfire response and for policies that have left these communities vulnerable, including the use of glyphosates that may exacerbate fire risks.\nThe community of Namaygoosisagagun experienced devastating losses, evacuating with little notice and watching their homes burn. As wildfires worsen each year, there are calls for better funding and planning to protect First Nations and their lands from future disasters.",
   "tags": [
     "environment"
   ],
   "talking_points": [
     {
-      "point": "First Nations leaders have criticized the Ford government for failing to communicate effectively during the wildfire crisis.",
-      "source_reference": "The article mentions criticism from First Nations leaders about being abandoned by the Ford government."
+      "point": "Many First Nations were forced to evacuate without warning or assistance from the provincial government during recent wildfires.",
+      "source_reference": "The article states that First Nations had to flee their communities with no warning or help from the provincial government."
     },
     {
-      "point": "The firefighters' union has stated that the government's lack of preparation has hindered firefighting efforts.",
-      "source_reference": "The article reports on criticism from the firefighters' union regarding the government's failure to prepare."
+      "point": "The Ontario government has consistently underfunded the emergency wildfire response budget, despite increasing wildfire incidents.",
+      "source_reference": "The article notes that Ontario has under-budgeted for emergency wildfire response, with specific figures provided."
     },
     {
-      "point": "Marit Stiles has called for a public inquiry into the government's response to the wildfires.",
-      "source_reference": "The article quotes Stiles calling for a public inquiry after hearing from First Nations leaders."
+      "point": "The use of glyphosates has been criticized for making forests more vulnerable to wildfires, yet the government continues this practice.",
+      "source_reference": "The article mentions that critics and First Nations have called for an end to glyphosate spraying due to its risks."
     },
     {
-      "point": "Stiles claims that the government has misrepresented the number of operational water bombers available for firefighting.",
-      "source_reference": "The article states that Stiles accused the Ford government of misleading the public about firefighting resources."
+      "point": "The community of Namaygoosisagagun had to evacuate with only the clothes on their backs as their homes burned.",
+      "source_reference": "The article describes how community members left with only the clothes on their backs while evacuating."
     }
   ],
-  "suggested_ask": "Request a public inquiry into the government's response to the wildfires and its communication with affected communities.",
-  "tone_note": "When calling, remember to be respectful and clear about your concerns.",
+  "suggested_ask": "I'm asking the Premier to commit to a review of the emergency wildfire response funding and evacuation protocols for First Nations communities.",
+  "tone_note": "When you call, remember to be respectful and clear about your concerns.",
   "levels": [
-    "provincial",
-    "federal"
+    "provincial"
   ],
   "hold_for_review": true,
-  "hold_reason": "The article contains opinionated language and framing that attributes conduct to party or character rather than describing the conduct. This makes it difficult to create a grounded, non-partisan summary without carrying its rhetoric."
+  "hold_reason": "The article contains opinionated language and framing that attributes conduct to party and character rather than focusing solely on the actions and their implications. This makes it difficult to provide a grounded, non-partisan summary without carrying the article's rhetoric."
 }
 ```
 
 </details>
 
-### [calldoug] ‘Surveillance pricing completely erodes a free market’: Expert weighs in on Olivia Chow’s push to protect Toronto shoppers
-- **Why held:** Some talking points reference actions or implications that are not directly supported by the article text, and the suggested ask may overreach the jurisdiction of the Premier's office.
-- **Source:** NOW Toronto — https://nowtoronto.com/news/olivia-chow-toronto-surveillance-pricing-ban-expert-reaction/
-- **Drafted ask:** I'm asking the Premier to support the regulation of surveillance pricing practices in Ontario.
+## ✓ Auto-published (1) — retroactive review
 
-<details><summary>Full drafted output</summary>
-
-```json
-{
-  "id": "2026-07-22-now-toronto-surveillance-pricing-completely-erodes-a-free-ma",
-  "title": "‘Surveillance pricing completely erodes a free market’: Expert weighs in on Olivia Chow’s push to protect Toronto shoppers",
-  "source_name": "NOW Toronto",
-  "source_url": "https://nowtoronto.com/news/olivia-chow-toronto-surveillance-pricing-ban-expert-reaction/",
-  "published_at": "2026-07-22T20:15:00.000Z",
-  "fetched_at": "2026-07-23T12:28:09.404Z",
-  "summary": "Toronto Mayor Olivia Chow has introduced a motion to explore options for banning or regulating surveillance pricing, which personalizes prices based on consumer data. This practice raises concerns about affordability, privacy, and transparency, particularly as it may exploit consumers already facing rising costs.\nThe motion directs city staff to provide recommendations by early 2027, but similar efforts at the provincial level have faced challenges, as seen with the Ontario NDP Leader's earlier motion that was voted down. Other jurisdictions, like Manitoba and New York City, have already taken steps to restrict surveillance pricing, highlighting a growing movement for consumer protection.",
-  "tags": [
-    "affordability"
-  ],
-  "talking_points": [
-    {
-      "point": "Mayor Chow's motion aims to address surveillance pricing, which uses personal data to set prices, potentially harming consumers.",
-      "source_reference": "The article states that Chow's motion directs staff to explore options to ban or regulate surveillance pricing."
-    },
-    {
-      "point": "Surveillance pricing raises concerns about consumer transparency and could exploit individuals struggling with rising costs.",
-      "source_reference": "The article mentions that the practice can take advantage of Torontonians facing rising costs."
-    },
-    {
-      "point": "Previous attempts to ban surveillance pricing at the provincial level have been unsuccessful, as seen with Marit Stiles' motion.",
-      "source_reference": "The article notes that Stiles' motion to ban surveillance pricing was voted down earlier this year."
-    },
-    {
-      "point": "Other jurisdictions, like Manitoba and New York City, have enacted legislation to restrict surveillance pricing practices.",
-      "source_reference": "The article cites that Manitoba and New York City have introduced legislation against surveillance pricing."
-    }
-  ],
-  "suggested_ask": "I'm asking the Premier to support the regulation of surveillance pricing practices in Ontario.",
-  "tone_note": "When calling, remember to be respectful and clear about your concerns.",
-  "levels": [
-    "provincial",
-    "municipal"
-  ],
-  "hold_for_review": true,
-  "hold_reason": "Some talking points reference actions or implications that are not directly supported by the article text, and the suggested ask may overreach the jurisdiction of the Premier's office."
-}
-```
-
-</details>
-
-## ✓ Auto-published (3) — retroactive review
-
-- **[callchow]** ‘Too many eyes’: Toronto residents raise privacy concerns as Chow eyes surveillance pricing ban ([source](https://nowtoronto.com/news/toronto-residents-raise-privacy-concerns-as-chow-eyes-surveillance-pricing-ban/)) — ask: “I'm asking the Mayor to provide a timeline for when recommendations on surveillance pricing will be available for council consideration.”
-- **[callchow]** ‘Surveillance pricing completely erodes a free market’: Expert weighs in on Olivia Chow’s push to protect Toronto shoppers ([source](https://nowtoronto.com/news/olivia-chow-toronto-surveillance-pricing-ban-expert-reaction/)) — ask: “I'm asking the Mayor to provide updates on the timeline for the proposed ban on surveillance pricing and its potential impacts on consumers.”
-- **[calldoug]** ‘Too many eyes’: Toronto residents raise privacy concerns as Chow eyes surveillance pricing ban ([source](https://nowtoronto.com/news/toronto-residents-raise-privacy-concerns-as-chow-eyes-surveillance-pricing-ban/)) — ask: “I'm asking the Mayor to prioritize public consultation on the proposed ban of surveillance pricing.”
+- **[calldoug]** First Nations had a wildfire plan. Ontario ignored it. Then came the flames ([source](https://thenarwhal.ca/ontario-ignored-first-nations-wildfire-plan/?utm_source=rss)) — ask: “I'm asking the Premier to commit to a public inquiry into the provincial government's emergency response to the wildfires affecting First Nations communities.”

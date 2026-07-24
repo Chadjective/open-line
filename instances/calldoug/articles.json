@@ -1,7 +1,43 @@
 {
   "instance_id": "calldoug",
-  "last_updated": "2026-07-23T12:28:09.405Z",
+  "last_updated": "2026-07-24T12:24:01.770Z",
   "articles": [
+    {
+      "id": "2026-07-23-the-narwhal-first-nations-had-a-wildfire-plan-ontario-ignore",
+      "title": "First Nations had a wildfire plan. Ontario ignored it. Then came the flames",
+      "source_name": "The Narwhal",
+      "source_url": "https://thenarwhal.ca/ontario-ignored-first-nations-wildfire-plan/?utm_source=rss",
+      "published_at": "2026-07-23T12:42:35.000Z",
+      "fetched_at": "2026-07-24T12:23:48.047Z",
+      "summary": "Wildfires in northern Ontario have devastated First Nations communities, with two completely burned down and many others under evacuation orders. First Nations leaders criticize the provincial government's slow response and lack of resources, highlighting that an emergency plan presented to Premier Doug Ford in 2021 has gone unanswered, leaving critical gaps in emergency management for Indigenous communities.\nThe article notes that the provincial and federal responses have been inadequate, with calls for resignations of senior officials and a public inquiry into the government's handling of the crisis. Local officials and Indigenous leaders emphasize that the government failed to provide timely warnings and support during the emergency, raising serious accountability questions about the province's actions.",
+      "tags": [
+        "environment"
+      ],
+      "talking_points": [
+        {
+          "point": "Two First Nations communities have completely burned down due to wildfires, highlighting the severity of the situation.",
+          "source_reference": "The article states that Collins and Whitewater Lake First Nations have entirely burned down."
+        },
+        {
+          "point": "First Nations leaders claim the provincial government was too slow to respond to the wildfire risks facing their communities.",
+          "source_reference": "The article mentions that leaders criticize the government's slow identification of risks."
+        },
+        {
+          "point": "An emergency plan presented to Premier Ford in 2021 has not received a response, despite outlining critical deficiencies in emergency management.",
+          "source_reference": "The article details the 82-page plan presented by Grand Chief Alvin Fiddler that has gone unanswered."
+        },
+        {
+          "point": "The provincial government has been criticized for not providing timely and accurate information during the evacuation process.",
+          "source_reference": "The article notes that impacted communities reported needing to vacate themselves without timely information."
+        }
+      ],
+      "suggested_ask": "I'm asking the Premier to commit to a public inquiry into the provincial government's emergency response to the wildfires affecting First Nations communities.",
+      "tone_note": "When you call, remember to be respectful and clear about your concerns.",
+      "levels": [
+        "provincial",
+        "federal"
+      ]
+    },
     {
       "id": "2026-07-22-now-toronto-too-many-eyes-toronto-residents-raise-privacy-co",
       "title": "‘Too many eyes’: Toronto residents raise privacy concerns as Chow eyes surveillance pricing ban",

@@ -2,6 +2,48 @@
   "instance_id": "callcarney",
   "articles": [
     {
+      "id": "2026-07-23-the-narwhal-first-nations-had-a-wildfire-plan-ontario-ignore",
+      "title": "First Nations had a wildfire plan. Ontario ignored it. Then came the flames",
+      "source_name": "The Narwhal",
+      "source_url": "https://thenarwhal.ca/ontario-ignored-first-nations-wildfire-plan/?utm_source=rss",
+      "published_at": "2026-07-23T12:42:35.000Z",
+      "fetched_at": "2026-07-24T12:24:01.769Z",
+      "summary": "Wildfires in northern Ontario have devastated First Nations communities, with two completely burned down and many others under evacuation orders. First Nations leaders criticize the provincial government's slow response and jurisdictional issues that hinder access to emergency resources, calling for resignations of senior officials and a public inquiry into the government's actions.\nIn 2021, an emergency plan was presented to the Ontario government, outlining deficiencies in emergency management for First Nations, but there has been no response. The current wildfire season is reported as the worst on record, with over 170 active fires and inadequate government support for affected communities.",
+      "tags": [
+        "climate"
+      ],
+      "talking_points": [
+        {
+          "point": "Two First Nations communities have completely burned down due to wildfires, highlighting the urgent need for effective emergency management.",
+          "source_reference": "The article states that Collins and Whitewater Lake First Nations have entirely burned down."
+        },
+        {
+          "point": "First Nations leaders claim the provincial government was too slow to respond to the wildfire risks facing their communities.",
+          "source_reference": "The article mentions leaders criticizing the government's slow identification of risks."
+        },
+        {
+          "point": "An emergency plan presented to the Ontario government in 2021 has not received a response, despite outlining critical deficiencies in emergency management.",
+          "source_reference": "The article notes that Grand Chief Alvin Fiddler presented an 82-page plan in 2021 with no response."
+        },
+        {
+          "point": "The current wildfire season has seen over 170 active fires, with many First Nations communities lacking timely government support for evacuations.",
+          "source_reference": "The article reports more than 170 active wildfires and issues with evacuation support."
+        },
+        {
+          "point": "Several First Nations chiefs are calling for a public inquiry into the provincial government's emergency response to the wildfires.",
+          "source_reference": "The article states that chiefs are asking for a public inquiry into the government's response."
+        }
+      ],
+      "suggested_ask": "I'm asking for a public inquiry into the provincial government's emergency response to the wildfire crisis affecting First Nations communities.",
+      "tone_note": "Remember to be respectful when calling the office, as staff will be answering.",
+      "levels": [
+        "provincial"
+      ],
+      "hold_for_review": true,
+      "hold_reason": "Some talking points are not directly checkable against the article text, and the suggested ask overreaches what the article's facts support.",
+      "held_at": "2026-07-24T12:24:01.769Z"
+    },
+    {
       "id": "2026-07-21-the-narwhal-canada-s-promises-to-capture-carbon-span-almost-",
       "title": "Canada’s promises to capture carbon span almost 20 years, with little gains",
       "source_name": "The Narwhal",

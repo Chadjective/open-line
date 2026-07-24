@@ -2,6 +2,44 @@
   "instance_id": "calldoug",
   "articles": [
     {
+      "id": "2026-07-23-ricochet-doug-ford-left-first-nations-in-ontario-to-burn",
+      "title": "Doug Ford left First Nations in Ontario to burn",
+      "source_name": "Ricochet",
+      "source_url": "https://ricochet.media/indigenous/doug-ford-left-first-nations-in-ontario-to-burn/",
+      "published_at": "2026-07-23T18:15:43.000Z",
+      "fetched_at": "2026-07-24T12:23:54.681Z",
+      "summary": "Wildfires have forced many First Nations in Ontario to evacuate without warning or assistance from the provincial government, leading to significant destruction of their communities. Critics blame Premier Doug Ford for underfunding the emergency wildfire response and for policies that have left these communities vulnerable, including the use of glyphosates that may exacerbate fire risks.\nThe community of Namaygoosisagagun experienced devastating losses, evacuating with little notice and watching their homes burn. As wildfires worsen each year, there are calls for better funding and planning to protect First Nations and their lands from future disasters.",
+      "tags": [
+        "environment"
+      ],
+      "talking_points": [
+        {
+          "point": "Many First Nations were forced to evacuate without warning or assistance from the provincial government during recent wildfires.",
+          "source_reference": "The article states that First Nations had to flee their communities with no warning or help from the provincial government."
+        },
+        {
+          "point": "The Ontario government has consistently underfunded the emergency wildfire response budget, despite increasing wildfire incidents.",
+          "source_reference": "The article notes that Ontario has under-budgeted for emergency wildfire response, with specific figures provided."
+        },
+        {
+          "point": "The use of glyphosates has been criticized for making forests more vulnerable to wildfires, yet the government continues this practice.",
+          "source_reference": "The article mentions that critics and First Nations have called for an end to glyphosate spraying due to its risks."
+        },
+        {
+          "point": "The community of Namaygoosisagagun had to evacuate with only the clothes on their backs as their homes burned.",
+          "source_reference": "The article describes how community members left with only the clothes on their backs while evacuating."
+        }
+      ],
+      "suggested_ask": "I'm asking the Premier to commit to a review of the emergency wildfire response funding and evacuation protocols for First Nations communities.",
+      "tone_note": "When you call, remember to be respectful and clear about your concerns.",
+      "levels": [
+        "provincial"
+      ],
+      "hold_for_review": true,
+      "hold_reason": "The article contains opinionated language and framing that attributes conduct to party and character rather than focusing solely on the actions and their implications. This makes it difficult to provide a grounded, non-partisan summary without carrying the article's rhetoric.",
+      "held_at": "2026-07-24T12:24:01.769Z"
+    },
+    {
       "id": "2026-07-22-ricochet-q-a-fighting-wildfires-and-doug-ford-with-ndp-le",
       "title": "Q&A: Fighting wildfires, and Doug Ford, with NDP leader Marit Stiles",
       "source_name": "Ricochet",
